@@ -1,0 +1,14 @@
+/* animations.css */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animate-fadeInSlow {
+  animation: fadeIn 4s ease-in-out;
+}
