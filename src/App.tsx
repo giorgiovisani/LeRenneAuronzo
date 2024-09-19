@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar.tsx";
 import Home from "./pages/Home"; // Home component
 import TheApartment from "./pages/TheApartment"; // Other page components
 import NotFound from "./pages/NotFound";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import './tailwind.css'; // Import Tailwind CSS globally
 
 function App() {
