@@ -2,12 +2,13 @@
 import { useRoutes } from "react-router-dom";
 
 import TheApartment from "../pages/TheApartment";
-// import Home from "pages/Home";
-// import NotFound from "pages/NotFound";
+import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 // import Aboutus from "pages/Aboutus";
 // import Reservation from "pages/Reservation";
 // import Contact from "pages/Contact";
 // import Homepage from "pages/Homepage";
+
 const ProjectRoutes = () => {
     let element = useRoutes([
         { path: "/", element: <Home /> },

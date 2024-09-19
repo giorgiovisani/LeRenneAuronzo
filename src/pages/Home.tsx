@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'tailwindcss/tailwind.css'; // Tailwind CSS
 import '../styles/animations.css'
