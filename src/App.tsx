@@ -7,7 +7,8 @@ import TheApartment from "./pages/TheApartment"; // Other page components
 import AttractionsPage from "./pages/AttractionsPage.tsx"; // Other page components
 import AttractionDetail from "./pages/AttractionDetail";
 import NotFound from "./pages/NotFound";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+// import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import './tailwind.css'; // Import Tailwind CSS globally
 import './i18n'; // Import your i18n configuration here
 
@@ -16,7 +17,7 @@ function App() {
     let items = ['Appartamento Le Renne', 'Availability', 'Attractions']
     const handleSelectedItem = (item: string) => console.log({item})
     return (
-        <Router>
+        <Router basename="/LeRenneAuronzo">
           {/*<BackgroundWrapper>*/}
             <NavBar />
             <Routes>
