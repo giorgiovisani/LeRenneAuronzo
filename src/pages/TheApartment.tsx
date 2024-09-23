@@ -19,9 +19,9 @@ const TheApartment: React.FC = () => {
           <div className="row">
             <div className="col-md-6">
               <img
-                src="/favicon.ico"
+                src="/images/favicon.ico"
                 alt="Living Room"
-                className="w-full h-auto rounded shadow-lg"
+                className="w-full h-auto rounded shadow-2xl"
               />
             </div>
             <div className="col-md-6 flex flex-col justify-center">
@@ -76,7 +76,7 @@ const TheApartment: React.FC = () => {
           <div className="row">
             <div className="col-md-6 order-md-2">
               <img
-                src="/bathroom1.jpg"
+                src="/images/bathroom1.jpg"
                 alt="Bathroom"
                 className="w-full h-auto rounded shadow-lg"
               />
@@ -95,7 +95,7 @@ const TheApartment: React.FC = () => {
           <div className="row">
             <div className="col-md-6">
               <img
-                src="/home_background.jpg"
+                src="/images/home_background.jpg"
                 alt="Balcony"
                 className="w-full h-auto rounded shadow-lg"
               />

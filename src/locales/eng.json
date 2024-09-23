@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Home",
+    "apartment": "The Apartment",
+    "availability": "Availability",
+    "attractions": "Attractions"
+  },
+  "homepage": {
+    "title": "Appartamento A un passo dal Lago",
+    "poetic_sentence": "Beauty and calm are the true companions of a restful mind.",
+    "author": "Anonymous"
+  }
+}

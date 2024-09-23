@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Casa",
+    "apartment": "L'Appartamento",
+    "availability": "Disponibilità",
+    "attractions": "Attrazioni"
+  },
+  "homepage": {
+    "title": "Appartamento A un passo dal Lago",
+    "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente riposata.",
+    "author": "Anonimo"
+  }
+}
