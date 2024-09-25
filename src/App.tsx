@@ -12,12 +12,15 @@ import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import './tailwind.css'; // Import Tailwind CSS globally
 import './i18n'; // Import your i18n configuration here
 
+// const basename = process.env.PUBLIC_URL;
+
 function App() {
 
     let items = ['Appartamento Le Renne', 'Availability', 'Attractions']
     const handleSelectedItem = (item: string) => console.log({item})
     return (
-        <Router basename="/LeRenneAuronzo">
+        // <Router basename="/LeRenneAuronzo">
+        <Router>
           {/*<BackgroundWrapper>*/}
             <NavBar />
             <Routes>
