@@ -1,13 +1,26 @@
 {
   "navbar": {
-    "home": "Casa",
+    "home": "Home",
     "apartment": "L'Appartamento",
     "availability": "Disponibilità",
     "attractions": "Attrazioni"
   },
   "homepage": {
     "title": "Appartamento A un passo dal Lago",
-    "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente riposata.",
+    "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente serena.",
     "author": "Anonimo"
+  },
+  "apartment": {
+    "title": "Benvenuti nell'Appartamento Le Renne",
+    "soggiorno_title": "Soggiorno",
+    "soggiorno_description": "Un ampio e accogliente soggiorno con comodi posti a sedere, una TV a schermo piatto e grandi finestre che lasciano entrare la luce naturale. Il posto perfetto per rilassarsi dopo una giornata di esplorazione delle attrazioni locali.",
+    "cucina_title": "Cucina Completamente Attrezzata",
+    "cucina_description": "La nostra cucina moderna è completamente attrezzata con tutti gli elettrodomestici necessari, tra cui frigorifero, forno, microonde e lavastoviglie, per farti sentire a casa durante il tuo soggiorno.",
+    "camera_title": "Camera da Letto Principale",
+    "camera_description": "La camera da letto principale offre un letto king-size con biancheria di alta qualità e un'atmosfera serena per una notte di sonno ristoratore. Svegliati con splendide viste sulla natura circostante.",
+    "bagno_title": "Bagno di Lusso",
+    "bagno_description": "L'appartamento dispone di un bagno spazioso e moderno, completo di doccia walk-in, prodotti da bagno di alta qualità e asciugamani morbidi per la tua comodità.",
+    "balcone_title": "Balcone Privato",
+    "balcone_description": "Goditi il tuo caffè mattutino o un bicchiere di vino la sera sul nostro balcone privato, che offre splendide viste sull'ambiente circostante e una fuga tranquilla."
   }
 }

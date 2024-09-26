@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "title": "Appartamento A un passo dal Lago",
     "home": "Home",
     "apartment": "The Apartment",
     "availability": "Availability",
@@ -9,5 +10,18 @@
     "title": "Appartamento A un passo dal Lago",
     "poetic_sentence": "Beauty and calm are the true companions of a restful mind.",
     "author": "Anonymous"
+  },
+  "apartment": {
+    "title": "Welcome to Le Renne Apartment",
+    "soggiorno_title": "Living Room",
+    "soggiorno_description": "A spacious and cozy living room with comfortable seating, a flat-screen TV, and large windows that let in natural light. The perfect place to relax after a day of exploring the local attractions.",
+    "cucina_title": "Fully Equipped Kitchen",
+    "cucina_description": "Our modern kitchen is fully equipped with all the necessary appliances, including a fridge, oven, microwave, and dishwasher, to make you feel at home during your stay.",
+    "camera_title": "Master Bedroom",
+    "camera_description": "The master bedroom offers a king-sized bed with premium linens and a serene atmosphere for a restful night’s sleep. Wake up to beautiful views of the surrounding nature.",
+    "bagno_title": "Luxury Bathroom",
+    "bagno_description": "The apartment features a spacious, modern bathroom complete with a walk-in shower, high-quality toiletries, and fluffy towels for your convenience.",
+    "balcone_title": "Private Balcony",
+    "balcone_description": "Enjoy your morning coffee or a glass of wine in the evening on our private balcony, offering stunning views of the local surroundings and a peaceful escape."
   }
 }

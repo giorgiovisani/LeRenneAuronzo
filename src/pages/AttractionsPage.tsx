@@ -1,6 +1,7 @@
 // AttractionsPage.tsx
 import React, { useState, useEffect } from 'react';
 import AttractionCard from '../components/AttractionCard';
+import { useLanguage } from '../context/LanguageContext'; // Adjust the import path as necessary
 
 interface Attraction {
   name: string;
@@ -14,10 +15,16 @@ const AttractionsPage: React.FC = () => {
   const [attractions, setAttractions] = useState<Attraction[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { language } = useLanguage();
+  const PUBLIC_URL = import.meta.env.BASE_URL;
+
 
   useEffect(() => {
+
+    const filename = language === 'en' ? 'attractions_eng.json' : 'attractions_it.json';
+
     // Fetch the data from the JSON file
-    fetch('/data/attractions.json')
+    fetch(`${PUBLIC_URL}data/${filename}`)
       .then((response) => response.json())
       .then((data) => {
         setAttractions(data);
@@ -48,9 +55,10 @@ const AttractionsPage: React.FC = () => {
           <AttractionCard
             key={index}
             name={attraction.name}
-            image={attraction.image}
+            image={`${PUBLIC_URL}${attraction.image}`}
             shortDescription={attraction.shortDescription}
             longDescription={attraction.longDescription} // Can be used for hover effect if needed
+            // link={`${basename}#/${attraction.link}`}
             link={attraction.link}
           />
         ))}

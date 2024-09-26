@@ -15,11 +15,12 @@ const AttractionDetail: React.FC = () => {
   const { attractionId } = useParams<{ attractionId: string }>(); // Get the attraction ID from the URL
   const [attraction, setAttraction] = useState<Attraction | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const PUBLIC_URL = import.meta.env.BASE_URL;
 
   useEffect(() => {
     if (attractionId) { // Ensure attractionId is defined
         // Fetch attraction data from the JSON file
-        fetch('/data/attractions.json')
+    fetch(`${PUBLIC_URL}data/attractions.json`)
           .then((response) => response.json())
           .then((data) => {
             const foundAttraction = data.find((attr: Attraction) => attr.link.includes(attractionId));
@@ -49,7 +50,8 @@ const AttractionDetail: React.FC = () => {
   return (
     <div className="p-8">
       <h1 className="text-4xl font-bold mb-4">{attraction.name}</h1>
-      <img src={attraction.image} alt={attraction.name} className="w-full h-64 object-cover mb-4 rounded-lg shadow-lg" />
+      <img src={`${PUBLIC_URL}${attraction.image}`} alt={attraction.name}
+           className="w-full h-64 object-cover mb-4 rounded-lg shadow-lg" />
       <p className="text-lg">{attraction.longDescription}</p>
     </div>
   );
