@@ -1,0 +1,47 @@
+{
+  "soggiorno": [
+    "images/Soggiorno 1.jpg",
+    "images/Soggiorno 2.jpg",
+    "images/Soggiorno 3.jpg",
+    "images/Soggiorno 4.jpg",
+    "images/Soggiorno 5.jpg",
+    "images/Soggiorno 6.jpg",
+    "images/Soggiorno 7.jpg",
+    "images/Soggiorno 8.jpg",
+    "images/Soggiorno 9.jpg",
+    "images/Soggiorno 10.jpg",
+    "images/Soggiorno 11.jpg",
+    "images/Soggiorno 12.jpg",
+    "images/Soggiorno 13.jpg",
+    "images/Soggiorno 14.jpg",
+    "images/Soggiorno 15.jpg"
+  ],
+  "cucina": [
+    "images/Cucina 1.jpg",
+    "images/Cucina 2.jpg",
+    "images/Cucina 3.jpg",
+    "images/Cucina 4.jpg",
+    "images/Cucina 5.jpg"
+  ],
+  "camera": [
+    "images/Camera letto grande 1.jpg",
+    "images/Camera letto grande 2.jpg",
+    "images/Camera letto grande 3.jpg",
+    "images/Camera letto grande 4.jpg",
+    "images/Camera letto grande 5.jpg"
+  ],
+  "bagno": [
+    "images/Bagno 1.jpg",
+    "images/Bagno 2.jpg",
+    "images/Bagno 3.jpg",
+    "images/Bagno 4.jpg",
+    "images/Bagno 5.jpg",
+    "images/Bagno 6.jpg",
+    "images/Bagno 7.jpg",
+    "images/Bagno 8.jpg"
+  ],
+  "balcone": [
+    "images/Camera letto piccola 1.jpg",
+    "images/Camera letto piccola 2.jpg"
+  ]
+}

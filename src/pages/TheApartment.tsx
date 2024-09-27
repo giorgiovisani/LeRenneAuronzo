@@ -1,11 +1,36 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap for styling
 import 'tailwindcss/tailwind.css';
 import {useTranslation} from 'react-i18next';
+import { useState, useEffect } from 'react';
+
+import ImageSlider from '../components/ImageSlider';
 
 const TheApartment: React.FC = () => {
 
   const PUBLIC_URL = import.meta.env.BASE_URL;
   const {t} = useTranslation();
+
+  const apartmentSections = Object.keys(t('apartment', {returnObjects: true})).filter(key => key !== 'title');
+  const [images, setImages] = useState<{ [key: string]: string[] }>({});
+
+  useEffect(() => {
+    const fetchImageConfig = async () => {
+      try {
+        const response = await fetch(`${PUBLIC_URL}data/imageConfig.json`);
+        if (response.ok) {
+          const imageConfig = await response.json();
+          setImages(imageConfig);
+        } else {
+          console.error('Failed to fetch image configuration');
+        }
+      } catch (error) {
+        console.error('Error fetching image configuration:', error);
+      }
+    };
+
+    fetchImageConfig();
+  }, [PUBLIC_URL]);
+
 
   return (
     <>
@@ -22,110 +47,27 @@ const TheApartment: React.FC = () => {
 
       {/* Apartment Sections */}
       <main className="container mt-5">
-        {/* Living Room Section */}
-        <section className="mb-12">
-          <div className="row">
-            <div className="col-md-6">
-              <img
-                src={`${PUBLIC_URL}images/favicon.ico`}
-                alt="Living Room"
-                className="w-full h-auto rounded shadow-2xl"
-              />
-            </div>
-            <div className="col-md-6 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-3">
-                {t('apartment.soggiorno_title')}
-              </h2>
-              <p className="text-lg leading-relaxed">
-                {t('apartment.soggiorno_description')}
-              </p>
-            </div>
-          </div>
-        </section>
+        {apartmentSections.map((section, index) => (
+          <section key={index} className="mb-12">
+            <div className="row">
+              <div className={`col-md-6 ${index % 2 === 0 ? '' : 'order-md-2'}`}>
+                {images[section] && images[section].length > 0 ? (
+                  <ImageSlider images={images[section]} alt={t(`apartment.${section}.title`)} />
+                ) : (
+                  <p>No images found for {section}</p>
+                )}              </div>
 
-        {/* Kitchen Section */}
-        <section className="mb-12">
-          <div className="row">
-            <div className="col-md-6 order-md-2">
-              <img
-                src={`${PUBLIC_URL}images/kitchen1.jpeg`}
-                alt="Kitchen"
-                className="w-full h-auto rounded shadow-lg"
-              />
+              <div className="col-md-6 flex flex-col justify-center">
+                <h2 className="text-2xl font-bold mb-3">
+                  {t(`apartment.${section}.title`)}
+                </h2>
+                <p className="text-lg leading-relaxed">
+                  {t(`apartment.${section}.description`)}
+                </p>
+              </div>
             </div>
-            <div className="col-md-6 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-3">
-                {t('apartment.cucina_title')}
-              </h2>
-              <p className="text-lg leading-relaxed">
-                {t('apartment.cucina_description')}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Bedroom Section */}
-        <section className="mb-12">
-          <div className="row">
-            <div className="col-md-6">
-              <img
-                src={`${PUBLIC_URL}images/bedroom1.jpeg`}
-                alt="Bedroom"
-                className="w-full h-auto rounded shadow-lg"
-              />
-            </div>
-            <div className="col-md-6 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-3">
-                {t('apartment.camera_title')}
-              </h2>
-              <p className="text-lg leading-relaxed">
-                {t('apartment.camera_description')}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Bathroom Section */}
-        <section className="mb-12">
-          <div className="row">
-            <div className="col-md-6 order-md-2">
-              <img
-                src={`${PUBLIC_URL}images/bathroom1.jpg`}
-                alt="Bathroom"
-                className="w-full h-auto rounded shadow-lg"
-              />
-            </div>
-            <div className="col-md-6 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-3">
-                {t('apartment.bagno_title')}
-              </h2>
-              <p className="text-lg leading-relaxed">
-                {t('apartment.bagno_description')}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Balcony Section */}
-        <section className="mb-12">
-          <div className="row">
-            <div className="col-md-6">
-              <img
-                src={`${PUBLIC_URL}images/home_background.jpg`}
-                alt="Balcony"
-                className="w-full h-auto rounded shadow-lg"
-              />
-            </div>
-            <div className="col-md-6 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-3">
-                {t('apartment.balcone_title')}
-              </h2>
-              <p className="text-lg leading-relaxed">
-                {t('apartment.balcone_description')}
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
+        ))}
       </main>
 
       {/* Footer */}

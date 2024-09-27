@@ -1,0 +1,53 @@
+{
+  "attractions": [
+    {
+      "name": "Lake Auronzo",
+      "image": "/images/auronzo_lago_2.jpeg",
+      "shortDescription": "ITA Test",
+      "longDescription": "Lake Auronzo offers a peaceful atmosphere, ideal for boating, swimming, or simply walking around its scenic shores.",
+      "link": "/attractions/lake-auronzo"
+    },
+    {
+      "name": "Tre Cime di Lavaredo",
+      "image": "/images/tre_cime.jpg",
+      "shortDescription": "Famous mountain peaks in the Dolomites.",
+      "longDescription": "The Tre Cime di Lavaredo are a well-known hiking and climbing destination with breathtaking views.",
+      "link": "/attractions/tre-cime"
+    },
+    {
+      "name": "Cortina Ski Slopes",
+      "image": "/images/sci_cortina.jpg",
+      "shortDescription": "Slopes",
+      "longDescription": "The Tre Cime di Lavaredo are a well-known hiking and climbing destination with breathtaking views.",
+      "link": "/attractions/cortina-ski-slopes"
+    },
+    {
+      "name": "Plan de Corones Ski Slopes",
+      "image": "/images/sci_plandecorones.jpg",
+      "shortDescription": "Brand new facilities, wonderful slopes. Suitable for all levels, from beginners to experts.",
+      "longDescription": "The Tre Cime di Lavaredo are a well-known hiking and climbing destination with breathtaking views.",
+      "link": "/attractions/plan-de-corones-ski-slopes"
+    },
+    {
+      "name": "Bad Moos Thermal Spa",
+      "image": "/images/bad_moos.jpg",
+      "shortDescription": "Grandiose Spa and Thermal complex",
+      "longDescription": "25000 sqm of Spa, including various saunas, Turkish baths, heated indoor and outdoor pools, gym use, etc. Massage options available.",
+      "link": "/attractions/bad-moos-thermal-spa"
+    },
+    {
+      "name": "Lake Braies",
+      "image": "/images/tre_cime.jpg",
+      "shortDescription": "Breathtaking glacial lake",
+      "longDescription": "A wonderful lake, beautiful in every season. In autumn, trees of every shade of red and yellow. You can rent a rowboat on the lake. Location where 'Three Steps from Heaven' was filmed.",
+      "link": "/attractions/lake-braies"
+    },
+    {
+      "name": "Lake Sorapis",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Turquoise glacial lake and wonderful hike",
+      "longDescription": "A walk to reach the lake for hikers of medium experience. The view is worth the effort.",
+      "link": "/attractions/lake-sorapis"
+    }
+  ]
+}

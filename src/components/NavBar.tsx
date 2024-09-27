@@ -15,9 +15,14 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
     i18n.changeLanguage(lng);
   };
 
+  // Estrai i campi della navbar dal file JSON
+  const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key => key !== 'title');
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
+
         {/* Navbar brand */}
         <a className="navbar-brand" href={`${basename}`}>
           {t('navbar.title')}
@@ -39,29 +44,41 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
         {/* Navbar links */}
         <div className="navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href={`${basename}#/apartment`}>
-                {t('navbar.apartment')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href={`${basename}#/availability`}>
-                {t('navbar.availability')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link"
-                 href={`${basename}#/attractions`}>{
-                t('navbar.attractions')}
-              </a> {/* Link to Attractions Page */}
-            </li>
-
+            {navbarItems.map((item, index) => (
+              <li className="nav-item" key={index}>
+                <a className="nav-link" href={`${basename}#/${item}`}>
+                  {t(`navbar.${item}`)}
+                </a>
+              </li>
+            ))}
           </ul>
 
-          {/* Language switcher button */}
+        {/*/!* Navbar links *!/*/}
+        {/*<div className="navbar-collapse" id="navbarNav">*/}
+        {/*  <ul className="navbar-nav">*/}
+        {/*    <li className="nav-item">*/}
+        {/*      <a className="nav-link" href={`${basename}#/apartment`}>*/}
+        {/*        {t('navbar.apartment')}*/}
+        {/*      </a>*/}
+        {/*    </li>*/}
+        {/*    <li className="nav-item">*/}
+        {/*      <a className="nav-link" href={`${basename}#/availability`}>*/}
+        {/*        {t('navbar.availability')}*/}
+        {/*      </a>*/}
+        {/*    </li>*/}
+        {/*    <li className="nav-item">*/}
+        {/*      <a className="nav-link"*/}
+        {/*         href={`${basename}#/attractions`}>{*/}
+        {/*        t('navbar.attractions')}*/}
+        {/*      </a> /!* Link to Attractions Page *!/*/}
+        {/*    </li>*/}
+
+        {/*  </ul>*/}
+
+        {/*  /!* Language switcher button *!/*/}
           <div className="ms-auto">
-            <button onClick={() => changeLanguage('it')} className="btn btn-outline-light me-2">IT</button>
-            <button onClick={() => changeLanguage('en')} className="btn btn-outline-light">EN</button>
+            <button onClick={() => handleLanguageChange('it')} className="btn btn-outline-light me-2">IT</button>
+            <button onClick={() => handleLanguageChange('en')} className="btn btn-outline-light">EN</button>
             <p className="text-gray-300">Current Language: {language}</p>
           </div>
 
