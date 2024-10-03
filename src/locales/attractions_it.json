@@ -3,51 +3,72 @@
     {
       "name": "Lago di Auronzo",
       "image": "/images/auronzo_lago_2.jpeg",
-      "shortDescription": "Prova ITA",
-      "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per fare gite in barca, nuotare o semplicemente camminare lungo le sue rive panoramiche.",
-      "link": "/attractions/lago-di-auronzo"
+      "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
+      "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per navigare, nuotare o semplicemente passeggiare lungo le sue rive sceniche.",
+      "link": "/attractions/lake-auronzo",
+      "getThere": "Il Lago di Auronzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5719,
+      "lng": 12.3781
     },
     {
       "name": "Tre Cime di Lavaredo",
       "image": "/images/tre_cime.jpg",
       "shortDescription": "Famose cime montuose nelle Dolomiti.",
-      "longDescription": "Le Tre Cime di Lavaredo sono una nota destinazione per escursioni e arrampicate con viste mozzafiato.",
-      "link": "/attractions/tre-cime"
+      "longDescription": "Le Tre Cime di Lavaredo sono una famosa destinazione per escursioni e arrampicate con viste mozzafiato.",
+      "link": "/attractions/tre-cime",
+      "getThere": "Le Tre Cime di Lavaredo possono essere raggiunte in auto o a piedi dal vicino villaggio di Auronzo.",
+      "lat": 46.6107,
+      "lng": 12.2919
     },
     {
-      "name": "Piste Sci Cortina",
+      "name": "Piste da sci di Cortina",
       "image": "/images/sci_cortina.jpg",
-      "shortDescription": "Piste",
-      "longDescription": "Le Tre Cime di Lavaredo sono una nota destinazione per escursioni e arrampicate con viste mozzafiato.",
-      "link": "/attractions/sci-cortina"
+      "shortDescription": "Piste da sci di livello mondiale a Cortina d'Ampezzo.",
+      "longDescription": "Cortina d'Ampezzo offre piste da sci di livello mondiale adatte a tutti i livelli, dai principianti agli esperti.",
+      "link": "/attractions/cortina-ski-slopes",
+      "getThere": "Cortina d'Ampezzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5403,
+      "lng": 12.1370
     },
     {
-      "name": "Piste Sci Plan de Corones",
+      "name": "Piste da sci di Plan de Corones",
       "image": "/images/sci_plandecorones.jpg",
-      "shortDescription": "Impianti nuovissimi, Piste meravigliose. Ogni livello, da principiante a esperto",
-      "longDescription": "Le Tre Cime di Lavaredo sono una nota destinazione per escursioni e arrampicate con viste mozzafiato.",
-      "link": "/attractions/sci-plandecorones"
+      "shortDescription": "Strutture nuove di zecca, piste meravigliose. Adatte a tutti i livelli, dai principianti agli esperti.",
+      "longDescription": "Plan de Corones offre strutture nuove di zecca e piste meravigliose adatte a tutti i livelli, dai principianti agli esperti.",
+      "link": "/attractions/plan-de-corones-ski-slopes",
+      "getThere": "Plan de Corones è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.7350,
+      "lng": 11.9300
     },
     {
-      "name": "Bad Moos Terme e Spa",
+      "name": "Terme di Bad Moos",
       "image": "/images/bad_moos.jpg",
-      "shortDescription": "Grandioso complesso termale e spa",
-      "longDescription": "25000 mq di Spa, comprendenti varie saune, bagni turchi, piscina interna ed esterna riscaldate, utilizzo della palestra ecc. Possibilità di massaggi",
-      "link": "/attractions/bad-moos"
+      "shortDescription": "Complesso termale grandioso.",
+      "longDescription": "Le Terme di Bad Moos offrono 25000 mq di spa, inclusi vari tipi di sauna, bagni turchi, piscine riscaldate interne ed esterne, uso della palestra, ecc. Opzioni di massaggio disponibili.",
+      "link": "/attractions/bad-moos-thermal-spa",
+      "getThere": "Le Terme di Bad Moos sono facilmente raggiungibili in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.6850,
+      "lng": 12.3050
     },
     {
       "name": "Lago di Braies",
-      "image": "/images/tre_cime.jpg",
-      "shortDescription": "Lago glaciale mozzafiato",
-      "longDescription": "Lago meraviglioso, in ogni periodo dell'anno. In autunno alberi di ogni sfumatura di rosso e giallo. Si può noleggiare una barca a remi sul lago. Location dove è stato girato 'Tre metri dal cielo'",
-      "link": "/attractions/lago-braies"
+      "image": "/images/lake_braies.jpg",
+      "shortDescription": "Lago glaciale mozzafiato.",
+      "longDescription": "Il Lago di Braies è un lago meraviglioso, bello in ogni stagione. In autunno, alberi di ogni tonalità di rosso e giallo. Puoi noleggiare una barca a remi sul lago. Location dove è stato girato 'Tre passi dal cielo'.",
+      "link": "/attractions/lake-braies",
+      "getThere": "Il Lago di Braies è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.7000,
+      "lng": 12.0000
     },
     {
-      "name": "Lago Sorapis",
+      "name": "Lago di Sorapis",
       "image": "/images/lago_sorapis.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione",
-      "longDescription": "Passeggiata per arrivare al lago per camminatori di media esperienza. La vista ripaga della fatica",
-      "link": "/attractions/lago-sorapis"
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
     }
   ]
 }

@@ -1,17 +1,21 @@
 {
   "navbar": {
-    "title": "Appartamento A un passo dal Lago",
+    "title": "A un passo dal Lago",
     "apartment": "The Apartment",
     "availability": "Availability",
-    "attractions": "Attractions"
+    "attractions": "Attractions",
+    "utilities": "Comfort"
   },
   "homepage": {
-    "title": "Appartamento A un passo dal Lago",
+    "title": "A un passo dal Lago",
     "poetic_sentence": "Beauty and calm are the true companions of a restful mind.",
     "author": "Anonymous"
   },
+  "availability": {
+    "title": "Availability"
+  },
   "apartment": {
-    "title": "Welcome to Le Renne Apartment",
+    "title": "Welcome",
     "soggiorno": {
       "title": "Living Room",
       "description": "A spacious and cozy living room with comfortable seating, a flat-screen TV, and large windows that let in natural light. The perfect place to relax after a day of exploring the local attractions.",
@@ -37,5 +41,19 @@
       "description": "Enjoy your morning coffee or a glass of wine in the evening on our private balcony, offering stunning views of the local surroundings and a peaceful escape.",
       "image": "images/favicon.ico"
     }
+  },
+    "attractions": {
+    "title": "Nearby Attractions",
+    "loading": "sta aricando",
+    "author": "Anonymous"
+  },
+    "utilities": {
+    "title": "Nearby Utilities",
+    "loading": "sta caricando",
+    "author": "Anonymous"
+  },
+  "attractionDetail": {
+    "getThere": "Get There",
+    "secondaryPicsTitle": "Memories from there"
   }
 }

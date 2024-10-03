@@ -1,17 +1,21 @@
 {
   "navbar": {
-    "title": "Appartamento A un passo dal Lago",
+    "title": "A un passo dal Lago",
     "apartment": "L'Appartamento",
     "availability": "Disponibilità",
-    "attractions": "Attrazioni"
+    "attractions": "Attrazioni",
+    "utilities": "Comodità"
   },
   "homepage": {
-    "title": "Appartamento A un passo dal Lago",
+    "title": "A un passo dal Lago",
     "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente serena.",
     "author": "Anonimo"
   },
+  "availability": {
+    "title": "Disponibilità"
+  },
   "apartment": {
-    "title": "Benvenuti nell'Appartamento Le Renne",
+    "title": "Benvenuti",
     "soggiorno": {
       "title": "Soggiorno",
       "description": "Un ampio e accogliente soggiorno con comodi posti a sedere, una TV a schermo piatto e grandi finestre che lasciano entrare la luce naturale. Il luogo perfetto per rilassarsi dopo una giornata di esplorazione delle attrazioni locali.",
@@ -37,5 +41,19 @@
       "description": "Goditi il tuo caffè mattutino o un bicchiere di vino la sera sul nostro balcone privato, che offre splendide viste sulle vicinanze e una fuga tranquilla.",
       "image": "images/favicon.ico"
     }
-  }
-}
+  },
+  "attractions": {
+    "title": "Divertimento e Attrazioni",
+    "loading": "Almost there",
+    "author": "Anonymous"
+  },
+  "utilities": {
+    "title": "Servizi Utili nei dintorni",
+    "loading": "sta caricando",
+    "author": "Anonymous"
+  },
+  "attractionDetail": {
+    "title": "TBD",
+    "getThere": "Come arrivare",
+    "secondaryPicsTitle": "Ricordi del posto"
+  }}

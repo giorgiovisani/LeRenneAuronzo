@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap for styling
 import 'tailwindcss/tailwind.css';
 import {useTranslation} from 'react-i18next';
-import { useState, useEffect } from 'react';
-
+import {useState, useEffect} from 'react';
 import ImageSlider from '../components/ImageSlider';
+import '../App.css'; // Import the App.css file
 
 const TheApartment: React.FC = () => {
 
@@ -31,14 +31,12 @@ const TheApartment: React.FC = () => {
     fetchImageConfig();
   }, [PUBLIC_URL]);
 
-
   return (
     <>
-
       {/* Header */}
-      <header className="bg-cover bg-center h-64"
+      <header className="apartment-header"
               style={{backgroundImage: `url('${PUBLIC_URL}images/apartment_header2.jpg')`}}>
-        <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
+        <div className="overlay">
           <h1 className="text-white text-4xl font-bold">
             {t('apartment.title')}
           </h1>
@@ -46,16 +44,10 @@ const TheApartment: React.FC = () => {
       </header>
 
       {/* Apartment Sections */}
-      <main className="container mt-5">
+      <main className="apartment-main">
         {apartmentSections.map((section, index) => (
-          <section key={index} className="mb-12">
+          <section key={index} className="apartment-section">
             <div className="row">
-              <div className={`col-md-6 ${index % 2 === 0 ? '' : 'order-md-2'}`}>
-                {images[section] && images[section].length > 0 ? (
-                  <ImageSlider images={images[section]} alt={t(`apartment.${section}.title`)} />
-                ) : (
-                  <p>No images found for {section}</p>
-                )}              </div>
 
               <div className="col-md-6 flex flex-col justify-center">
                 <h2 className="text-2xl font-bold mb-3">
@@ -65,17 +57,19 @@ const TheApartment: React.FC = () => {
                   {t(`apartment.${section}.description`)}
                 </p>
               </div>
+
+              <div className={`col-md-6 ${index % 2 === 0 ? '' : 'order-md-2'}`}>
+                {images[section] && images[section].length > 0 ? (
+                  <ImageSlider images={images[section]} alt={t(`apartment.${section}.title`)}/>
+                ) : (
+                  <p>No images found for {section}</p>
+                )}
+              </div>
+
             </div>
           </section>
         ))}
       </main>
-
-      {/* Footer */}
-      <footer className="bg-dark text-white py-3 mt-5">
-        <div className="container text-center">
-          <p className="mb-0">&copy; 2024 Le Renne Apartment. All Rights Reserved.</p>
-        </div>
-      </footer>
     </>
   );
 };

@@ -3,51 +3,72 @@
     {
       "name": "Lake Auronzo",
       "image": "/images/auronzo_lago_2.jpeg",
-      "shortDescription": "ITA Test",
+      "shortDescription": "A peaceful lake ideal for boating, swimming, or walking.",
       "longDescription": "Lake Auronzo offers a peaceful atmosphere, ideal for boating, swimming, or simply walking around its scenic shores.",
-      "link": "/attractions/lake-auronzo"
+      "link": "/attractions/lake-auronzo",
+      "getThere": "Lake Auronzo is easily accessible by car or public transportation from the village of Auronzo.",
+      "lat": 46.5719,
+      "lng": 12.3781
     },
     {
       "name": "Tre Cime di Lavaredo",
       "image": "/images/tre_cime.jpg",
       "shortDescription": "Famous mountain peaks in the Dolomites.",
       "longDescription": "The Tre Cime di Lavaredo are a well-known hiking and climbing destination with breathtaking views.",
-      "link": "/attractions/tre-cime"
+      "link": "/attractions/tre-cime",
+      "getThere": "The Tre Cime di Lavaredo can be reached by car or by hiking from the nearby village of Auronzo.",
+      "lat": 46.6107,
+      "lng": 12.2919
     },
     {
       "name": "Cortina Ski Slopes",
       "image": "/images/sci_cortina.jpg",
-      "shortDescription": "Slopes",
-      "longDescription": "The Tre Cime di Lavaredo are a well-known hiking and climbing destination with breathtaking views.",
-      "link": "/attractions/cortina-ski-slopes"
+      "shortDescription": "World-class ski slopes in Cortina d'Ampezzo.",
+      "longDescription": "Cortina d'Ampezzo offers world-class ski slopes suitable for all levels, from beginners to experts.",
+      "link": "/attractions/cortina-ski-slopes",
+      "getThere": "Cortina d'Ampezzo is easily accessible by car or public transportation from the village of Auronzo.",
+      "lat": 46.5403,
+      "lng": 12.1370
     },
     {
       "name": "Plan de Corones Ski Slopes",
       "image": "/images/sci_plandecorones.jpg",
       "shortDescription": "Brand new facilities, wonderful slopes. Suitable for all levels, from beginners to experts.",
-      "longDescription": "The Tre Cime di Lavaredo are a well-known hiking and climbing destination with breathtaking views.",
-      "link": "/attractions/plan-de-corones-ski-slopes"
+      "longDescription": "Plan de Corones offers brand new facilities and wonderful slopes suitable for all levels, from beginners to experts.",
+      "link": "/attractions/plan-de-corones-ski-slopes",
+      "getThere": "Plan de Corones is easily accessible by car or public transportation from the village of Auronzo.",
+      "lat": 46.7350,
+      "lng": 11.9300
     },
     {
       "name": "Bad Moos Thermal Spa",
       "image": "/images/bad_moos.jpg",
-      "shortDescription": "Grandiose Spa and Thermal complex",
-      "longDescription": "25000 sqm of Spa, including various saunas, Turkish baths, heated indoor and outdoor pools, gym use, etc. Massage options available.",
-      "link": "/attractions/bad-moos-thermal-spa"
+      "shortDescription": "Grandiose Spa and Thermal complex.",
+      "longDescription": "Bad Moos Thermal Spa offers 25000 sqm of Spa, including various saunas, Turkish baths, heated indoor and outdoor pools, gym use, etc. Massage options available.",
+      "link": "/attractions/bad-moos-thermal-spa",
+      "getThere": "Bad Moos Thermal Spa is easily accessible by car or public transportation from the village of Auronzo.",
+      "lat": 46.6850,
+      "lng": 12.3050
     },
     {
       "name": "Lake Braies",
-      "image": "/images/tre_cime.jpg",
-      "shortDescription": "Breathtaking glacial lake",
-      "longDescription": "A wonderful lake, beautiful in every season. In autumn, trees of every shade of red and yellow. You can rent a rowboat on the lake. Location where 'Three Steps from Heaven' was filmed.",
-      "link": "/attractions/lake-braies"
+      "image": "/images/lake_braies.jpg",
+      "shortDescription": "Breathtaking glacial lake.",
+      "longDescription": "Lake Braies is a wonderful lake, beautiful in every season. In autumn, trees of every shade of red and yellow. You can rent a rowboat on the lake. Location where 'Three Steps from Heaven' was filmed.",
+      "link": "/attractions/lake-braies",
+      "getThere": "Lake Braies is easily accessible by car or public transportation from the village of Auronzo.",
+      "lat": 46.7000,
+      "lng": 12.0000
     },
     {
       "name": "Lake Sorapis",
       "image": "/images/lago_sorapis.jpg",
-      "shortDescription": "Turquoise glacial lake and wonderful hike",
-      "longDescription": "A walk to reach the lake for hikers of medium experience. The view is worth the effort.",
-      "link": "/attractions/lake-sorapis"
+      "shortDescription": "Turquoise glacial lake and wonderful hike.",
+      "longDescription": "Lake Sorapis is a turquoise glacial lake and a wonderful hike for medium-experienced hikers. The view is worth the effort.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Lake Sorapis is easily accessible by car or public transportation from the village of Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
     }
   ]
 }

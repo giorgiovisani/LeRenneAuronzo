@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import AttractionCard from '../components/AttractionCard';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 import { useLanguage } from '../context/LanguageContext'; // Adjust the import path as necessary
-import attractionsEN from '../locales/attractions_eng.json'; // Adjust the path as necessary
-import attractionsIT from '../locales/attractions_it.json'; // Adjust the path as necessary
+import utilitiesEN from '../locales/utilities_eng.json'; // Adjust the path as necessary
+import utilitiesIT from '../locales/utilities_it.json'; // Adjust the path as necessary
 import Search from '../components/Search'; // Import the Search component
-import '../App.css'; // Import the App.css file
 
 interface Attraction {
   name: string;
@@ -15,7 +14,7 @@ interface Attraction {
   link: string;
 }
 
-const AttractionsPage: React.FC = () => {
+const UtilitiesPage: React.FC = () => {
   const [attractions, setAttractions] = useState<Attraction[]>([]);
   const [filteredAttractions, setFilteredAttractions] = useState<Attraction[]>([]);
   const [loading, setLoading] = useState(true);
@@ -28,17 +27,17 @@ const AttractionsPage: React.FC = () => {
   useEffect(() => {
     const fetchAttractions = async () => {
       try {
-        const data = language === 'en' ? attractionsEN.attractions : attractionsIT.attractions;
+        const data = language === 'en' ? utilitiesEN.attractions : utilitiesIT.attractions;
         if (Array.isArray(data)) {
           setAttractions(data);
           setFilteredAttractions(data); // Initialize filtered attractions with all attractions
         } else {
-          throw new Error('Invalid attractions data');
+          throw new Error('Invalid utilities data');
         }
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching attractions:', error);
-        setError('Failed to load attractions');
+        console.error('Error fetching utilities:', error);
+        setError('Failed to load utilities');
         setLoading(false);
       }
     };
@@ -58,7 +57,7 @@ const AttractionsPage: React.FC = () => {
   };
 
   if (loading) {
-    return <div className="p-8 text-center">{t('attractions.loading')}</div>;
+    return <div className="p-8 text-center">{t('utilities.loading')}</div>;
   }
 
   if (error) {
@@ -66,10 +65,10 @@ const AttractionsPage: React.FC = () => {
   }
 
   return (
-    <div className="attractions-page">
-      <h1 className="attractions-title">{t('attractions.title')}</h1>
+    <div className="p-8">
+      <h1 className="text-3xl font-bold text-center mb-8">{t('utilities.title')}</h1>
       <Search onSearch={handleSearch} onToggle={toggleSearch} isOpen={isSearchOpen} />
-      <div className="attractions-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {filteredAttractions.map((attraction, index) => (
           <AttractionCard
             key={index}
@@ -85,4 +84,4 @@ const AttractionsPage: React.FC = () => {
   );
 };
 
-export default AttractionsPage;
+export default UtilitiesPage;

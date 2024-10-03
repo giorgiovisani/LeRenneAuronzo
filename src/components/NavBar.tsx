@@ -1,5 +1,7 @@
 import {useTranslation} from 'react-i18next';
 import {useLanguage} from '../context/LanguageContext';
+import {useState} from 'react';
+
 
 interface NavBarProps {
   basename: string;
@@ -9,83 +11,109 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
 
   const {t, i18n} = useTranslation();
   const {language, changeLanguage} = useLanguage();
+  const [isOpen, setIsOpen] = useState(false);
+  const PUBLIC_URL = import.meta.env.BASE_URL;
 
   const handleLanguageChange = (lng: string) => {
     changeLanguage(lng);
     i18n.changeLanguage(lng);
   };
 
-  // Estrai i campi della navbar dal file JSON
-  const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key => key !== 'title');
-
+  // Extract the navbar items from the JSON file
+  const navbarItems = Object.keys(t('navbar', {returnObjects: true})).filter(key => key !== 'title');
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-
-        {/* Navbar brand */}
-        <a className="navbar-brand" href={`${basename}`}>
-          {t('navbar.title')}
-        </a>
-
-        {/* Navbar toggler for mobile view */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        {/* Navbar links */}
-        <div className="navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            {navbarItems.map((item, index) => (
-              <li className="nav-item" key={index}>
-                <a className="nav-link" href={`${basename}#/${item}`}>
-                  {t(`navbar.${item}`)}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-        {/*/!* Navbar links *!/*/}
-        {/*<div className="navbar-collapse" id="navbarNav">*/}
-        {/*  <ul className="navbar-nav">*/}
-        {/*    <li className="nav-item">*/}
-        {/*      <a className="nav-link" href={`${basename}#/apartment`}>*/}
-        {/*        {t('navbar.apartment')}*/}
-        {/*      </a>*/}
-        {/*    </li>*/}
-        {/*    <li className="nav-item">*/}
-        {/*      <a className="nav-link" href={`${basename}#/availability`}>*/}
-        {/*        {t('navbar.availability')}*/}
-        {/*      </a>*/}
-        {/*    </li>*/}
-        {/*    <li className="nav-item">*/}
-        {/*      <a className="nav-link"*/}
-        {/*         href={`${basename}#/attractions`}>{*/}
-        {/*        t('navbar.attractions')}*/}
-        {/*      </a> /!* Link to Attractions Page *!/*/}
-        {/*    </li>*/}
-
-        {/*  </ul>*/}
-
-        {/*  /!* Language switcher button *!/*/}
-          <div className="ms-auto">
-            <button onClick={() => handleLanguageChange('it')} className="btn btn-outline-light me-2">IT</button>
-            <button onClick={() => handleLanguageChange('en')} className="btn btn-outline-light">EN</button>
-            <p className="text-gray-300">Current Language: {language}</p>
+    <nav className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Navbar brand */}
+          <div className="flex items-center">
+            <a href={`${basename}`}
+               className="text-xl font-bold text-gray-300 hover:text-white hover:font-bold no-underline">
+              {t('navbar.title')}
+            </a>
           </div>
 
+          {/* Navbar toggler for mobile view */}
+          <div className="flex md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="bg-black inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded={isOpen}
+            >
+              <span className="sr-only">Open main menu</span>
+              {/* Menu open: "hidden", Menu closed: "block" */}
+              <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"/>
+              </svg>
+              {/* Menu open: "block", Menu closed: "hidden" */}
+              <svg className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+
+            {/* Language switcher buttons for mobile view */}
+            <div className="flex md:hidden space-x-2 ml-4">
+              <button onClick={() => handleLanguageChange('it')}
+                      className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
+                <img src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" className="h-6 w-6"/>
+              </button>
+              <button onClick={() => handleLanguageChange('en')}
+                      className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
+                <img src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" className="h-6 w-6"/>
+              </button>
+              <p className="text-gray-300 text-sm">{language}</p>
+            </div>
+          </div>
+
+          {/* Navbar links */}
+          <div className="hidden md:flex md:space-x-8">
+            {navbarItems.map((item, index) => (
+              <a key={index} href={`${basename}#/${item}`}
+                 className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline">
+                {t(`navbar.${item}`)}
+              </a>
+            ))}
+          </div>
+
+          {/*/!* Language switcher buttons *!/*/}
+          {/*<div className="hidden md:flex items-center space-x-4">*/}
+          {/*  <button onClick={() => handleLanguageChange('it')} className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline">IT</button>*/}
+          {/*  <button onClick={() => handleLanguageChange('en')} className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline">EN</button>*/}
+          {/*  <p className="text-gray-300 text-sm">Current Language: {language}</p>*/}
+          {/*</div>*/}
+
+          {/* Language switcher buttons for desktop view */}
+          <div className="hidden md:flex items-center space-x-4">
+            <button onClick={() => handleLanguageChange('it')}
+                    className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
+              <img src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" className="h-6 w-6"/>
+            </button>
+            <button onClick={() => handleLanguageChange('en')}
+                    className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
+              <img src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" className="h-6 w-6"/>
+            </button>
+            <p className="text-gray-300 text-sm">{language}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          {navbarItems.map((item, index) => (
+            <a key={index} href={`${basename}#/${item}`}
+               className="text-gray-300 hover:text-white hover:font-bold block font-medium no-underline">
+              {t(`navbar.${item}`)}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
   );
 };
 
-export default NavBar
+export default NavBar;

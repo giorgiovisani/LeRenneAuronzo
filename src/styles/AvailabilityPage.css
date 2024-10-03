@@ -1,0 +1,32 @@
+.availability-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.availability-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.availability-calendar {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .availability-title {
+    font-size: 2rem;
+  }
+
+  .availability-calendar {
+    width: 100%;
+  }
+}

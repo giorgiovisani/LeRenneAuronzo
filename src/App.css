@@ -1,0 +1,256 @@
+/* App.css */
+
+/* General Styles */
+.container {
+  padding: 2rem;
+}
+
+.header {
+  background-size: cover;
+  background-position: center;
+  height: 16rem;
+  position: relative;
+}
+
+.header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.main-content {
+  margin-top: 3rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-left: 1rem; /* Add margin left for text */
+}
+
+.image-slider {
+  margin-bottom: 2rem;
+}
+
+/* Home Page Styles */
+.home-background {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.home-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.home-sentence {
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 75%;
+  line-height: 1.6;
+}
+
+/* Attraction Detail Page Styles */
+.attraction-detail {
+  padding: 2rem;
+}
+
+.attraction-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.attraction-image {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.attraction-description {
+  font-size: 1.125rem;
+}
+
+.attraction-map-container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.attraction-map-section {
+  width: 50%;
+}
+
+.attraction-map-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.attraction-map-description {
+  font-size: 1.125rem;
+}
+
+.attraction-slider-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Attractions Page Styles */
+.attractions-page {
+  padding: 2rem;
+}
+
+.attractions-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Availability Page Styles */
+.availability-page {
+  padding: 2rem;
+}
+
+.availability-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.availability-calendar {
+  margin-top: 1rem;
+}
+
+/* The Apartment Page Styles */
+.apartment-header {
+  background-size: cover;
+  background-position: center;
+  height: 16rem;
+  position: relative;
+}
+
+.apartment-header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apartment-header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.apartment-main {
+  margin-top: 3rem;
+}
+
+.apartment-section {
+  margin-bottom: 3rem;
+}
+
+.apartment-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.apartment-section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-left: 1rem; /* Add margin left for text */
+}
+
+.apartment-image-slider {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-sentence {
+    font-size: 1rem;
+  }
+
+  .attraction-title {
+    font-size: 1.75rem;
+  }
+
+  .attraction-map-container {
+    flex-direction: column;
+  }
+
+  .attraction-map-section {
+    width: 100%;
+  }
+
+  .apartment-header h1 {
+    font-size: 2rem;
+  }
+
+  .apartment-section {
+    flex-direction: column;
+  }
+
+  .apartment-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .apartment-section p {
+    font-size: 1rem;
+    margin-left: 0; /* Remove margin left for text on mobile */
+  }
+}
