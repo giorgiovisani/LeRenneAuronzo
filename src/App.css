@@ -254,3 +254,36 @@
     margin-left: 0; /* Remove margin left for text on mobile */
   }
 }
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*background: rgba(0, 0, 0, 0.5); !* Dark background for contrast *!*/
+  background: transparent;
+}
+
+/* Custom Button Styles */
+.custom-button {
+  background-color: #0b1031; /* or dark blue */
+  color: grey;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.custom-button:hover,
+.custom-button:active {  background-color: #0b1031; /* Change to dark blue on hover */
+  color: white; /* Text becomes whiter */
+  font-weight: bold; /* Text becomes bold */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Enhanced 3D effect */
+}

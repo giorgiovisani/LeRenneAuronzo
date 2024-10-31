@@ -9,7 +9,9 @@
   "homepage": {
     "title": "A un passo dal Lago",
     "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente serena.",
-    "author": "Anonimo"
+    "author": "Anonimo",
+    "what_to_do_around": "what_to_do_around",
+    "book_now": "book_now"
   },
   "availability": {
     "title": "Disponibilità"
@@ -56,4 +58,5 @@
     "title": "TBD",
     "getThere": "Come arrivare",
     "secondaryPicsTitle": "Ricordi del posto"
-  }}
+  }
+}

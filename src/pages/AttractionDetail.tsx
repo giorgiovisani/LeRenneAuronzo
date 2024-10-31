@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import React, {useState, useEffect} from 'react';
+import {useParams} from 'react-router-dom';
+import {useLanguage} from '../context/LanguageContext';
 import attractionsEN from '../locales/attractions_eng.json';
 import attractionsIT from '../locales/attractions_it.json';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import ImageSlider from '../components/ImageSlider'; // Adjust the import path as necessary
 import '../App.css'; // Import the App.css file
 
@@ -15,19 +15,19 @@ interface Attraction {
   shortDescription: string;
   lat: number; // Add latitude
   lng: number; // Add longitude
+  getThere: string; // Add getThere description
+
 }
 
 const AttractionDetail: React.FC = () => {
-  const { attractionId } = useParams<{ attractionId: string }>();
+  const {attractionId} = useParams<{ attractionId: string }>();
   const [attraction, setAttraction] = useState<Attraction | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [images, setImages] = useState<string[]>([]);
-  const { language } = useLanguage();
-  const { t } = useTranslation();
+  const {language} = useLanguage();
+  const {t} = useTranslation();
   const PUBLIC_URL = import.meta.env.BASE_URL;
   const GOOGLE_MAPS_API_KEY: string = 'AIzaSyBNzaAEq0TJme_v6r7rgDj2YnnbM6XqBoo';
-
-  const attractionInfo = t('attractionDetail', { returnObjects: true });
 
   useEffect(() => {
     if (attractionId) {
@@ -37,7 +37,7 @@ const AttractionDetail: React.FC = () => {
       if (foundAttraction) {
         setAttraction(foundAttraction);
         // Load images dynamically
-        const imagePaths = Array.from({ length: 5 }, (_, i) =>
+        const imagePaths = Array.from({length: 5}, (_, i) =>
           `${PUBLIC_URL}images/${attractionId}/${i + 1}.jpg` // Load lower-resolution images
         );
         setImages(imagePaths);
@@ -67,7 +67,7 @@ const AttractionDetail: React.FC = () => {
       <p className="attraction-description">{t(attraction.longDescription)}</p>
       <div className="attraction-map-container">
         <div className="attraction-map-section">
-          <h2 className="attraction-map-title">{attractionInfo.getThere}</h2>
+          <h2 className="attraction-map-title">{t('attractionDetail.getThere')}</h2>
           <p className="attraction-map-description">{t(attraction.getThere)}</p>
         </div>
         <div className="attraction-map-section">
@@ -76,14 +76,14 @@ const AttractionDetail: React.FC = () => {
             width="100%"
             height="300"
             frameBorder="0"
-            style={{ border: 0 }}
+            style={{border: 0}}
             src={mapSrc}
             allowFullScreen
           />
         </div>
       </div>
       <div className="mt-4">
-        <h2 className="attraction-slider-title">{attractionInfo.secondaryPicsTitle}</h2>
+        <h2 className="attraction-slider-title">{t('attractionDetail.secondaryPicsTitle')}</h2>
         <ImageSlider images={images} alt="attraction secondary pics"/>
       </div>
     </div>

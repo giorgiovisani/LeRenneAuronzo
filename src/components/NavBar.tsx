@@ -10,7 +10,7 @@ interface NavBarProps {
 export const NavBar: React.FC<NavBarProps> = ({basename}) => {
 
   const {t, i18n} = useTranslation();
-  const {language, changeLanguage} = useLanguage();
+  const { changeLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const PUBLIC_URL = import.meta.env.BASE_URL;
 
@@ -65,7 +65,7 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
                       className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
                 <img src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" className="h-6 w-6"/>
               </button>
-              <p className="text-gray-300 text-sm">{language}</p>
+              {/*<p className="text-gray-300 text-sm">{language}</p>*/}
             </div>
           </div>
 
@@ -79,12 +79,6 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
             ))}
           </div>
 
-          {/*/!* Language switcher buttons *!/*/}
-          {/*<div className="hidden md:flex items-center space-x-4">*/}
-          {/*  <button onClick={() => handleLanguageChange('it')} className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline">IT</button>*/}
-          {/*  <button onClick={() => handleLanguageChange('en')} className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline">EN</button>*/}
-          {/*  <p className="text-gray-300 text-sm">Current Language: {language}</p>*/}
-          {/*</div>*/}
 
           {/* Language switcher buttons for desktop view */}
           <div className="hidden md:flex items-center space-x-4">
@@ -96,7 +90,7 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
                     className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
               <img src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" className="h-6 w-6"/>
             </button>
-            <p className="text-gray-300 text-sm">{language}</p>
+            {/*<p className="text-gray-300 text-sm">{language}</p>*/}
           </div>
         </div>
       </div>

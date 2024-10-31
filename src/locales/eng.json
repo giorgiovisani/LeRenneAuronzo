@@ -9,7 +9,9 @@
   "homepage": {
     "title": "A un passo dal Lago",
     "poetic_sentence": "Beauty and calm are the true companions of a restful mind.",
-    "author": "Anonymous"
+    "author": "Anonymous",
+    "what_to_do_around": "what_to_do_around",
+    "book_now": "book_now"
   },
   "availability": {
     "title": "Availability"
@@ -42,12 +44,12 @@
       "image": "images/favicon.ico"
     }
   },
-    "attractions": {
+  "attractions": {
     "title": "Nearby Attractions",
     "loading": "sta aricando",
     "author": "Anonymous"
   },
-    "utilities": {
+  "utilities": {
     "title": "Nearby Utilities",
     "loading": "sta caricando",
     "author": "Anonymous"
