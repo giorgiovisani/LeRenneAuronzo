@@ -1,0 +1,8 @@
+I have a react web app made of different pages.
+I store the data  inside two different jsons one per each language that I want to display (inside the src/locales folder).
+In the tailwind navbar I have two buttons activating a languagecontext component that changes the language of my app
+by using the usetranslation function from i18next setted up with two different json files per language:
+One about all the pages data, the other with the attractions data.
+From the attractions page, by clicking on an attraction card, it displays the attraction detail page of that attraction.
+
+I want to migrate all the styling towards NextUI version 2.4.8. Help me switch each page and component to the new styling version

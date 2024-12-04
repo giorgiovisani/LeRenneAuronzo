@@ -1,0 +1,53 @@
+{
+  "attractions": [
+    {
+      "name": "Lago di Auronzo",
+      "image": "/images/auronzo_lago_2.jpeg",
+      "shortDescription": "Prova ITA",
+      "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per fare gite in barca, nuotare o semplicemente camminare lungo le sue rive panoramiche.",
+      "link": "/attractions/lago-di-auronzo"
+    },
+    {
+      "name": "Tre Cime di Lavaredo",
+      "image": "/images/tre_cime.jpg",
+      "shortDescription": "Famose cime montuose nelle Dolomiti.",
+      "longDescription": "Le Tre Cime di Lavaredo sono una nota destinazione per escursioni e arrampicate con viste mozzafiato.",
+      "link": "/attractions/tre-cime"
+    },
+    {
+      "name": "Piste Sci Cortina",
+      "image": "/images/sci_cortina.jpg",
+      "shortDescription": "Piste",
+      "longDescription": "Le Tre Cime di Lavaredo sono una nota destinazione per escursioni e arrampicate con viste mozzafiato.",
+      "link": "/attractions/sci-cortina"
+    },
+    {
+      "name": "Piste Sci Plan de Corones",
+      "image": "/images/sci_plandecorones.jpg",
+      "shortDescription": "Impianti nuovissimi, Piste meravigliose. Ogni livello, da principiante a esperto",
+      "longDescription": "Le Tre Cime di Lavaredo sono una nota destinazione per escursioni e arrampicate con viste mozzafiato.",
+      "link": "/attractions/sci-plandecorones"
+    },
+    {
+      "name": "Bad Moos Terme e Spa",
+      "image": "/images/bad_moos.jpg",
+      "shortDescription": "Grandioso complesso termale e spa",
+      "longDescription": "25000 mq di Spa, comprendenti varie saune, bagni turchi, piscina interna ed esterna riscaldate, utilizzo della palestra ecc. Possibilità di massaggi",
+      "link": "/attractions/bad-moos"
+    },
+    {
+      "name": "Lago di Braies",
+      "image": "/images/tre_cime.jpg",
+      "shortDescription": "Lago glaciale mozzafiato",
+      "longDescription": "Lago meraviglioso, in ogni periodo dell'anno. In autunno alberi di ogni sfumatura di rosso e giallo. Si può noleggiare una barca a remi sul lago. Location dove è stato girato 'Tre metri dal cielo'",
+      "link": "/attractions/lago-braies"
+    },
+    {
+      "name": "Lago Sorapis",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione",
+      "longDescription": "Passeggiata per arrivare al lago per camminatori di media esperienza. La vista ripaga della fatica",
+      "link": "/attractions/lago-sorapis"
+    }
+  ]
+}

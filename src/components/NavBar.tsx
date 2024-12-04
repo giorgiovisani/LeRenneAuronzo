@@ -1,7 +1,10 @@
 import {useTranslation} from 'react-i18next';
 import {useLanguage} from '../context/LanguageContext';
 import {useState} from 'react';
+import { Navbar, Button, Link, Image } from "@nextui-org/react";
 
+// Check if NextUI components are imported correctly
+console.log({ Navbar, Button, Link, Image });
 
 interface NavBarProps {
   basename: string;
@@ -109,5 +112,57 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
     </nav>
   );
 };
+
+//
+//   return (
+//     <Navbar isBordered variant="floating">
+//       <Navbar.Brand>
+//         <Link href={`${basename}`} color="text" css={{ fontWeight: 'bold', fontSize: '1.25rem' }}>
+//           {t('navbar.title')}
+//         </Link>
+//       </Navbar.Brand>
+//
+//       <Navbar.Content hideIn="xs">
+//         {navbarItems.map((item, index) => (
+//           <Navbar.Link key={index} href={`${basename}#/${item}`} color="text">
+//             {t(`navbar.${item}`)}
+//           </Navbar.Link>
+//         ))}
+//       </Navbar.Content>
+//
+//       <Navbar.Content>
+//         {/* Language Switcher Buttons for Desktop View */}
+//         <Button auto light onClick={() => handleLanguageChange('it')}>
+//           <Image src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" width={24} height={24} />
+//         </Button>
+//         <Button auto light onClick={() => handleLanguageChange('en')}>
+//           <Image src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" width={24} height={24} />
+//         </Button>
+//       </Navbar.Content>
+//
+//       <Navbar.Toggle showIn="xs" onClick={() => setIsOpen(!isOpen)} />
+//
+//       <Navbar.Collapse isOpen={isOpen}>
+//         {navbarItems.map((item, index) => (
+//           <Navbar.CollapseItem key={index}>
+//             <Link href={`${basename}#/${item}`} color="text">
+//               {t(`navbar.${item}`)}
+//             </Link>
+//           </Navbar.CollapseItem>
+//         ))}
+//         <Navbar.CollapseItem>
+//           <Button auto light onClick={() => handleLanguageChange('it')}>
+//             <Image src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" width={24} height={24} />
+//           </Button>
+//           <Button auto light onClick={() => handleLanguageChange('en')}>
+//             <Image src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" width={24} height={24} />
+//           </Button>
+//         </Navbar.CollapseItem>
+//       </Navbar.Collapse>
+//     </Navbar>
+//   );
+// };
+
+
 
 export default NavBar;
