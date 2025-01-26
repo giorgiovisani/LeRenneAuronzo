@@ -287,3 +287,33 @@
   font-weight: bold; /* Text becomes bold */
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Enhanced 3D effect */
 }
+
+/* Add these styles for smooth transitions */
+.transition-all {
+  transition-property: all;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+/* Add this to your animations.css */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}

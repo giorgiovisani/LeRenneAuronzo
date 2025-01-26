@@ -10,7 +10,7 @@ interface NavBarProps {
   basename: string;
 }
 
-export const NavBar: React.FC<NavBarProps> = ({basename}) => {
+export const NavBar: React.FC<NavBarProps & { handleBookingClick: () => void }> = ({ basename, handleBookingClick }) => {
 
   const {t, i18n} = useTranslation();
   const { changeLanguage } = useLanguage();
@@ -23,8 +23,7 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
   };
 
   // Extract the navbar items from the JSON file
-  const navbarItems = Object.keys(t('navbar', {returnObjects: true})).filter(key => key !== 'title');
-
+const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key => !['title', 'utilities'].includes(key));
   return (
     <nav className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,12 +72,25 @@ export const NavBar: React.FC<NavBarProps> = ({basename}) => {
           </div>
 
           {/* Navbar links */}
-          <div className="hidden md:flex md:space-x-8">
+          <div className="hidden md:flex md:space-x-8 items-center">
             {navbarItems.map((item, index) => (
-              <a key={index} href={`${basename}#/${item}`}
-                 className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline">
-                {t(`navbar.${item}`)}
-              </a>
+              item === 'availability' ? (
+                <button
+                  key={index}
+                  onClick={handleBookingClick}
+                  className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline text-xl p-2 m-0 leading-none bg-transparent border-none focus:outline-none"
+                >
+                  {t(`navbar.${item}`)}
+                </button>
+              ) : (
+                <a
+                  key={index}
+                  href={`${basename}#/${item}`}
+                  className="text-gray-300 hover:text-white hover:font-bold font-medium no-underline text-xl p-2 m-0 leading-none"
+                >
+                  {t(`navbar.${item}`)}
+                </a>
+              )
             ))}
           </div>
 

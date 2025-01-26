@@ -1,17 +1,18 @@
 {
   "navbar": {
     "title": "A un passo dal Lago",
-    "apartment": "L'Appartamento",
-    "availability": "Disponibilità",
+    "apartment": "Appartamento",
+    "availability": "Prenota ora",
     "attractions": "Attrazioni",
-    "utilities": "Comodità"
+    "utilities": "Comodità",
+    "reviews": "Dicono di noi"
   },
   "homepage": {
     "title": "A un passo dal Lago",
     "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente serena.",
     "author": "Anonimo",
-    "what_to_do_around": "what to do around",
-    "book_now": "book now"
+    "what_to_do_around": "Esplora il Cadore",
+    "book_now": "Vieni a trovarci"
   },
   "availability": {
     "title": "Disponibilità"
@@ -58,5 +59,34 @@
     "title": "TBD",
     "getThere": "Come arrivare",
     "secondaryPicsTitle": "Ricordi del posto"
+  },
+  "reviews": {
+    "title": "Cosa dicono di Noi",
+    "reviewsList": [
+      {
+        "author": "Gaetano",
+        "recensione": "Appartamento molto grazioso ma soprattutto funzionale. Corredato di qualsiasi cosa, compresa lava-asciuga che in periodi invernali è utilissima. Gli spazi adattati alla perfezione, termosifoni in ogni dove, rendono l'ambiente caldo e accogliente. Stoviglie, coperte, cuscini ecc ecc... Insomma tutto quello che ognuno di noi ha nella propria casa. A due passi dal centro, raggiungibile a piedi e a cinquanta metri dal market. Punto nevralgico per spostarti in ogni dove tra Veneto e Trentino. Mezz'ora da Cortina, poco più da Dobbiaco. Prezzi onestissimi ma soprattutto proprietario persona veramente gentile e disponibile. Ci tornerò sicuramente.",
+        "periodo": "Gennaio 2025",
+        "notti": 5
+      },
+      {
+        "author": "Valentina",
+        "recensione": "La posizione ottima. Appartamento pulito e super accessoriato (non mancava nulla). Ritorneremo. Settimana top",
+        "periodo": "Agosto 2024",
+        "notti": 7
+      },
+      {
+        "author": "Stefano",
+        "recensione": "Appartamento perfetto, c'è veramente tutto (persino giochi da tavola, necessario per il cucito, doppie prese ecc). Comodissima la lavasciuga, il bagno è nuovo e funzionale. Posizione ottima per fare due passi ad Auronzo (supermercato, panificio e macelleria a un passo), ma anche per le navette che portano a Misurina e alle Tre Cime di Lavaredo (fermano quasi lì davanti). Comodo il posto auto, anche in garage. Proprietari gentili, check in molto semplice",
+        "periodo": "Luglio 2024",
+        "notti": 8
+      },
+      {
+        "author": "Valentina",
+        "recensione": "L'appartamento è molto carino e arredato con gusto. Pulizia impeccabile e il bagno è nuovissimo. Non manca nulla (c'è anche la lavasciuga). È il miglior appartamento in cui ho pernottato fino ad ora.\n\nIl divano letto nel soggiorno è davvero comodo. Si apre in meno di un minuto ed è pronto all'uso (con coperte e lenzuola già preparate).\n\nLa signora Eugenia è gentilissima e molto disponibile, nessun problema arrivando ad ora tarda.\n\nAuronzo ci è piaciuta molto, paesino tranquillo con natura spettacolare attorno. Tre cime e lago di Auronzo e di Braies i posti più belli.\n\nTorneremo sicuramente perché è un posto ricco di attrazioni tutto l'anno.",
+        "periodo": "Giugno 2024",
+        "notti": 4
+      }
+    ]
   }
 }

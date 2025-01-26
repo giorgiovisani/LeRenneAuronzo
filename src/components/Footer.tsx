@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white p-8">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-xl font-bold mb-4">Contacts</h2>
+            <h2 className="text-xl font-bold mb-4">Contacts & Booking</h2>
             <div className="flex items-center mb-2">
               <span className="mr-2">{contacts.phone}</span>
               <a href={`tel:${contacts.phone}`} className="text-blue-400 hover:text-blue-500">
@@ -44,9 +44,9 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center">
-          <p className="mb-0">&copy; 2024 Le Renne Apartment. All Rights Reserved.</p>
-          </div>
+          {/*<div className="flex items-center">*/}
+          {/*<p className="mb-0">&copy; 2024 Le Renne Apartment. All Rights Reserved.</p>*/}
+          {/*</div>*/}
         </div>
       </div>
     </footer>

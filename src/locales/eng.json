@@ -2,16 +2,17 @@
   "navbar": {
     "title": "A un passo dal Lago",
     "apartment": "The Apartment",
-    "availability": "Availability",
+    "availability": "Visit Us",
     "attractions": "Attractions",
-    "utilities": "Comfort"
+    "utilities": "Comfort",
+    "reviews": "Reviews"
   },
   "homepage": {
     "title": "A un passo dal Lago",
     "poetic_sentence": "Beauty and calm are the true companions of a restful mind.",
     "author": "Anonymous",
-    "what_to_do_around": "what to do around",
-    "book_now": "book now"
+    "what_to_do_around": "Explore Auronzo and around",
+    "book_now": "Come "
   },
   "availability": {
     "title": "Availability"
