@@ -21,27 +21,7 @@
       "lng": 12.2919
     },
     {
-      "name": "Cortina Ski Slopes",
-      "image": "/images/sci_cortina.jpg",
-      "shortDescription": "World-class ski slopes in Cortina d'Ampezzo.",
-      "longDescription": "Cortina d'Ampezzo offers world-class ski slopes suitable for all levels, from beginners to experts.",
-      "link": "/attractions/cortina-ski-slopes",
-      "getThere": "Cortina d'Ampezzo is easily accessible by car or public transportation from the village of Auronzo.",
-      "lat": 46.5403,
-      "lng": 12.1370
-    },
-    {
-      "name": "Plan de Corones Ski Slopes",
-      "image": "/images/sci_plandecorones.jpg",
-      "shortDescription": "Brand new facilities, wonderful slopes. Suitable for all levels, from beginners to experts.",
-      "longDescription": "Plan de Corones offers brand new facilities and wonderful slopes suitable for all levels, from beginners to experts.",
-      "link": "/attractions/plan-de-corones-ski-slopes",
-      "getThere": "Plan de Corones is easily accessible by car or public transportation from the village of Auronzo.",
-      "lat": 46.7350,
-      "lng": 11.9300
-    },
-    {
-      "name": "Bad Moos Thermal Spa",
+      "name": "Terme nei dintorni",
       "image": "/images/bad_moos.jpg",
       "shortDescription": "Grandiose Spa and Thermal complex.",
       "longDescription": "Bad Moos Thermal Spa offers 25000 sqm of Spa, including various saunas, Turkish baths, heated indoor and outdoor pools, gym use, etc. Massage options available.",

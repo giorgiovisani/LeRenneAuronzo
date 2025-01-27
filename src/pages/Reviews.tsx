@@ -65,7 +65,7 @@ const Reviews: React.FC = () => {
         </h1>
 
         {/* Review Card Container */}
-        <div className="relative overflow-hidden h-96 w-full"> {/* Fixed height for smooth transitions */}
+        <div className="relative overflow-hidden h-[500px] w-full"> {/* Adjust height as needed */}
           {/* Left Arrow */}
           <div
             className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer opacity-0 hover:opacity-100 transition-opacity duration-300 z-20"
@@ -118,13 +118,15 @@ const Reviews: React.FC = () => {
               isTransitioning ? 'opacity-0 -translate-x-full' : 'opacity-100 translate-x-0'
             }`}
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
               {currentReview.author}
             </h2>
-            <p className="text-lg text-gray-700 mb-4 italic">
-              "{currentReview.recensione}"
-            </p>
-            <p className="text-sm text-gray-600">
+            <div className="overflow-y-auto h-[300px] sm:h-[350px]"> {/* Scrollable container */}
+              <p className="text-lg sm:text-xl text-gray-700 mb-4 italic">
+                "{currentReview.recensione}"
+              </p>
+            </div>
+            <p className="text-sm sm:text-base text-gray-600">
               <strong>Periodo:</strong> {currentReview.periodo} |{' '}
               <strong>Notti:</strong> {currentReview.notti}
             </p>
@@ -136,13 +138,15 @@ const Reviews: React.FC = () => {
               isTransitioning ? 'opacity-100 translate-x-0' : 'opacity-100 translate-x-full'
             }`}
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
               {nextReview.author}
             </h2>
-            <p className="text-lg text-gray-700 mb-4 italic">
-              "{nextReview.recensione}"
-            </p>
-            <p className="text-sm text-gray-600">
+            <div className="overflow-y-auto h-[300px] sm:h-[350px]"> {/* Scrollable container */}
+              <p className="text-lg sm:text-xl text-gray-700 mb-4 italic">
+                "{nextReview.recensione}"
+              </p>
+            </div>
+            <p className="text-sm sm:text-base text-gray-600">
               <strong>Periodo:</strong> {nextReview.periodo} |{' '}
               <strong>Notti:</strong> {nextReview.notti}
             </p>

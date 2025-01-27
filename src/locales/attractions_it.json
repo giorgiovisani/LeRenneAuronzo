@@ -1,6 +1,15 @@
 {
   "attractions": [
     {
+      "name": "Negozi - Servizi Auronzo",
+      "image": "/images/auronzo_lago_2.jpeg",
+      "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
+      "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per navigare, nuotare o semplicemente passeggiare lungo le sue rive sceniche.",
+      "link": "/attractions/lake-auronzo",
+      "getThere": "Il Lago di Auronzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5719,
+      "lng": 12.3781
+    },    {
       "name": "Lago di Auronzo",
       "image": "/images/auronzo_lago_2.jpeg",
       "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
@@ -21,27 +30,47 @@
       "lng": 12.2919
     },
     {
-      "name": "Piste da sci di Cortina",
-      "image": "/images/sci_cortina.jpg",
-      "shortDescription": "Piste da sci di livello mondiale a Cortina d'Ampezzo.",
-      "longDescription": "Cortina d'Ampezzo offre piste da sci di livello mondiale adatte a tutti i livelli, dai principianti agli esperti.",
-      "link": "/attractions/cortina-ski-slopes",
-      "getThere": "Cortina d'Ampezzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.5403,
-      "lng": 12.1370
+      "name": "Lago di Braies",
+      "image": "/images/lago_braies.jpg",
+      "shortDescription": "Lago glaciale mozzafiato.",
+      "longDescription": "Il Lago di Braies è un lago meraviglioso, bello in ogni stagione. In autunno, alberi di ogni tonalità di rosso e giallo. Puoi noleggiare una barca a remi sul lago. Location dove è stato girato 'Tre passi dal cielo'.",
+      "link": "/attractions/lake-braies",
+      "getThere": "Il Lago di Braies è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.7000,
+      "lng": 12.0000
     },
     {
-      "name": "Piste da sci di Plan de Corones",
-      "image": "/images/sci_plandecorones.jpg",
-      "shortDescription": "Strutture nuove di zecca, piste meravigliose. Adatte a tutti i livelli, dai principianti agli esperti.",
-      "longDescription": "Plan de Corones offre strutture nuove di zecca e piste meravigliose adatte a tutti i livelli, dai principianti agli esperti.",
-      "link": "/attractions/plan-de-corones-ski-slopes",
-      "getThere": "Plan de Corones è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.7350,
-      "lng": 11.9300
+      "name": "Lago di Misurina",
+      "image": "/images/misurina.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/misurina",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
     },
     {
-      "name": "Terme di Bad Moos",
+      "name": "Cibo e Prodotti Tipici",
+      "image": "/images/cibo.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/cibo-tipico",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Mangiare in Malga",
+      "image": "/images/malga.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/malghe",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Trekking e Sentieri",
       "image": "/images/bad_moos.jpg",
       "shortDescription": "Complesso termale grandioso.",
       "longDescription": "Le Terme di Bad Moos offrono 25000 mq di spa, inclusi vari tipi di sauna, bagni turchi, piscine riscaldate interne ed esterne, uso della palestra, ecc. Opzioni di massaggio disponibili.",
@@ -51,17 +80,97 @@
       "lng": 12.3050
     },
     {
-      "name": "Lago di Braies",
-      "image": "/images/lake_braies.jpg",
-      "shortDescription": "Lago glaciale mozzafiato.",
-      "longDescription": "Il Lago di Braies è un lago meraviglioso, bello in ogni stagione. In autunno, alberi di ogni tonalità di rosso e giallo. Puoi noleggiare una barca a remi sul lago. Location dove è stato girato 'Tre passi dal cielo'.",
-      "link": "/attractions/lake-braies",
-      "getThere": "Il Lago di Braies è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.7000,
-      "lng": 12.0000
+      "name": "Terme nei dintorni",
+      "image": "/images/bad_moos.jpg",
+      "shortDescription": "Complesso termale grandioso.",
+      "longDescription": "Le Terme di Bad Moos offrono 25000 mq di spa, inclusi vari tipi di sauna, bagni turchi, piscine riscaldate interne ed esterne, uso della palestra, ecc. Opzioni di massaggio disponibili.",
+      "link": "/attractions/bad-moos-thermal-spa",
+      "getThere": "Le Terme di Bad Moos sono facilmente raggiungibili in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.6850,
+      "lng": 12.3050
+    },
+    {
+      "name": "Escursioni in Bici",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Cortina, perla delle Dolomiti",
+      "image": "/images/cortina.jpg",
+      "shortDescription": "Città mondana e di lusso, famosa per lo sci",
+      "longDescription": "è una delle località di montagna più famose del mondo. Sede delle Olimpiadi invernali del 1956 e località sciistica per antonomasia, simbolo della mondanità italiana e internazionale, Cortina è da sempre una meta d’eccellenza per chi ama la montagna e i suoi paesaggi, lo sport ed il divertimento. è circondata da alte montagne rese uniche all'alba e al tramonto dai colori rosati delle rocce, composte di dolomia: l’Antelao, il Sorapiss, la Croda da Lago, la Croda Rossa, le Tofane e il Cristallo, gruppi dolomitici di rara bellezza. Stupenda è pure la muraglia naturale del Pomagagnon, che le fa da sfondo. Con i suoi 120 chilometri di piste, Cortina è una località top per gli appassionati dello sci. Le principali aree sciistiche sono l'Area Tofane, l'Area Faloria-Cristallo, l'Area 5 Torri-Lagazuoi e le Aree di San Vito-Auronzo-Misurina.",
+      "link": "/attractions/cortina-perla-dolomiti",
+      "getThere": "Si raggiunge in 40 minuti di guida, attarversando il passo Tre Croci (quota 1600 mslm) con splendide viste sulla vallata. 10 minuti Prima di entrare in paese, ci sono gli impianti da Sci dei Monti Faloria e Cristallo. ",
+      "lat": 46.537953633026156,
+      "lng": 12.135789989395967
+    },
+    {
+      "name": "Bosco di Somadida",
+      "image": "/images/somadida.jpg",
+      "shortDescription": "Bosco incontaminato, Riserva Didattica",
+      "longDescription": "A 1400 metri di altitudine, lungo la strada che collega Auronzo a Misurina, si estende la Foresta di Somadida, una riserva naturale di grande fascino e valore storico. Questo polmone verde, composto principalmente da abeti rossi, abeti bianchi e faggi, è un luogo dove la natura incontra la cultura: al suo interno si trovano il suggestivo Museo del Bosco, la Biblioteca del Bosco e un’area dedicata alla protezione delle farfalle. La foresta ha un passato affascinante: donata nel 1493 dalla Magnifica Comunità Cadorina alla Repubblica di Venezia, fornì legname pregiato per oltre tre secoli, fino al 1797. Oggi, Somadida è una meta ideale per chi desidera immergersi in un ambiente incontaminato, ricco di storia e biodiversità, perfetto per passeggiate rigeneranti e momenti di scoperta.",
+      "link": "/attractions/bosco-somadida",
+      "getThere": "Per arrivare alla riserva partendo da Auronzo, segui la statale regionale SR48 in direzione Misurina fino a Palus San Marco. Superata la stazione del Corpo Forestale dello Stato, sulla sinistra si osserva un cartello che indica l'accesso al parcheggio della Foresta. Da qui si prosegue a piedi.",
+      "lat": 46.53138364508213, 
+      "lng": 12.27913853620571
     },
     {
       "name": "Lago di Sorapis",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Sciare ad Auronzo",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Sciare dintorni",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Sci di Fondo",
+      "image": "/images/fondo.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/fondo",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Fun Bob Auronzo",
+      "image": "/images/lago_sorapis.jpg",
+      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/lake-sorapis",
+      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "lat": 46.5300,
+      "lng": 12.1500
+    },
+    {
+      "name": "Ciaspolate",
       "image": "/images/lago_sorapis.jpg",
       "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
