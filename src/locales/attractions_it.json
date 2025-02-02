@@ -11,7 +11,7 @@
       "lng": 12.3781
     },    {
       "name": "Lago di Auronzo",
-      "image": "/images/auronzo_lago_2.jpeg",
+      "image": "/images/auronzo_lago.jpg",
       "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
       "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per navigare, nuotare o semplicemente passeggiare lungo le sue rive sceniche.",
       "link": "/attractions/lake-auronzo",
@@ -43,7 +43,7 @@
       "name": "Lago di Misurina",
       "image": "/images/misurina.jpg",
       "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
-      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "longDescription": "Il Lago di Misurina è uno dei laghi più affascinanti delle Dolomiti. Per maggiori informazioni, visita <a href='https://www.example.com' target='_blank' rel='noopener noreferrer'>questo sito</a>.",
       "link": "/attractions/misurina",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5300,
@@ -81,20 +81,20 @@
     },
     {
       "name": "Terme nei dintorni",
-      "image": "/images/bad_moos.jpg",
+      "image": "/images/spa.jpg",
       "shortDescription": "Complesso termale grandioso.",
       "longDescription": "Le Terme di Bad Moos offrono 25000 mq di spa, inclusi vari tipi di sauna, bagni turchi, piscine riscaldate interne ed esterne, uso della palestra, ecc. Opzioni di massaggio disponibili.",
-      "link": "/attractions/bad-moos-thermal-spa",
+      "link": "/attractions/spa",
       "getThere": "Le Terme di Bad Moos sono facilmente raggiungibili in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.6850,
       "lng": 12.3050
     },
     {
       "name": "Escursioni in Bici",
-      "image": "/images/lago_sorapis.jpg",
+      "image": "/images/bici.jpg",
       "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
-      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
-      "link": "/attractions/lake-sorapis",
+      "longDescription": "Questo straordinario itinerario ciclabile collega Auronzo a Misurina, la suggestiva \"Perla delle Dolomiti\". Il primo tratto, fino a Palùs San Marco (circa 15 km), è adatto a tutti grazie al percorso pianeggiante e scorrevole. Da qui, il sentiero diventa più avventuroso e stimolante, perfetto per gli amanti della mountain bike e dell’e-bike. L'attraversamento della secolare Foresta di Somadida aggiunge un tocco di magia all’esperienza.\n\nCompletata nel 2017, questa ciclabile sterrata garantisce un tragitto immerso nella natura, senza attraversamenti stradali, offrendo panorami spettacolari su vette iconiche come le Tre Cime di Lavaredo, il Sorapìss e il Cristallo. Un’avventura imperdibile per chi cerca un’esperienza autentica tra le meraviglie delle Dolomiti!",
+      "link": "/attractions/bici",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5300,
       "lng": 12.1500
@@ -131,20 +131,20 @@
     },
     {
       "name": "Sciare ad Auronzo",
-      "image": "/images/lago_sorapis.jpg",
+      "image": "/images/sci_auronzo.jpg",
       "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
-      "link": "/attractions/lake-sorapis",
+      "link": "/attractions/sciare-auronzo",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5300,
       "lng": 12.1500
     },
     {
       "name": "Sciare dintorni",
-      "image": "/images/lago_sorapis.jpg",
+      "image": "/images/sci_dintorni.jpg",
       "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
-      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
-      "link": "/attractions/lake-sorapis",
+      "longDescription": "<a https://www.dovesciare.it/localita/tre-cime-dolomiti> Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
+      "link": "/attractions/sciare-dintorni",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5300,
       "lng": 12.1500
@@ -160,21 +160,11 @@
       "lng": 12.1500
     },
     {
-      "name": "Fun Bob Auronzo",
-      "image": "/images/lago_sorapis.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
-      "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
-      "link": "/attractions/lake-sorapis",
-      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.5300,
-      "lng": 12.1500
-    },
-    {
       "name": "Ciaspolate",
-      "image": "/images/lago_sorapis.jpg",
+      "image": "/images/ciaspole.jpg",
       "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
-      "link": "/attractions/lake-sorapis",
+      "link": "/attractions/ciaspole",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5300,
       "lng": 12.1500

@@ -8,7 +8,7 @@ import AttractionDetail from "./pages/AttractionDetail";
 import Reviews from "./pages/Reviews";
 import NotFound from "./pages/NotFound";
 import AvailabilityPage from "./pages/Availability.tsx"; // Import the i18n configuration
-import { handleBookingClick } from './components/HandleBookingClick.tsx';
+import { handleClickBooking } from './components/HandleClick.tsx';
 // import UtilitiesPage from "./pages/UtilitiesPage.tsx"; // Import the CSS variables file
 import {LanguageProvider} from './context/LanguageContext.tsx';
 // import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
@@ -27,15 +27,15 @@ function App() {
     <LanguageProvider>
       <Router>
         {/*<BackgroundWrapper>*/}
-        <NavBar basename={basename} handleBookingClick={handleBookingClick}/>
+        <NavBar basename={basename} handleBookingClick={handleClickBooking}/>
         <Routes>
           {/* Home page as the default */}
-          <Route path="/" element={<Home handleBookingClick={handleBookingClick} />}/>
+          <Route path="/" element={<Home handleBookingClick={handleClickBooking} />}/>
 
           {/* Other Routes */}
           <Route path="/apartment" element={<TheApartment/>}/>
 
-          <Route path="/availability" element={<AvailabilityPage handleBookingClick={handleBookingClick} />}/>
+          <Route path="/availability" element={<AvailabilityPage handleBookingClick={handleClickBooking} />}/>
 
           <Route path="/attractions" element={<AttractionsPage/>}/>
 

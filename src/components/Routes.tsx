@@ -4,7 +4,7 @@ import { useRoutes } from "react-router-dom";
 import TheApartment from "../pages/TheApartment";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
-import { handleBookingClick } from './HandleBookingClick.tsx';
+import { handleClickBooking } from './HandleClick.tsx';
 // import Aboutus from "pages/Aboutus";
 // import Reservation from "pages/Reservation";
 // import Contact from "pages/Contact";
@@ -12,7 +12,7 @@ import { handleBookingClick } from './HandleBookingClick.tsx';
 
 const ProjectRoutes = () => {
     let element = useRoutes([
-        { path: "/", element: <Home handleBookingClick={handleBookingClick} /> },
+        { path: "/", element: <Home handleBookingClick={handleClickBooking} /> },
         { path: "*", element: <NotFound /> },
         {path: "apartment", element: <TheApartment />,},
         // {path: "aboutus", element: <Aboutus />,},

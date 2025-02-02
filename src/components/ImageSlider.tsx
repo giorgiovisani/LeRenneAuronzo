@@ -25,7 +25,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({images, alt}) => {
             key={index}
             src={image}
             alt={alt}
-            className="w-full h-auto min-w-full"
+            className="w-full h-auto min-w-full max-h-[80vh]"
             loading="lazy" // Lazy load the images
           />
         ))}

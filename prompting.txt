@@ -5,4 +5,13 @@ by using the usetranslation function from i18next setted up with two different j
 One about all the pages data, the other with the attractions data.
 From the attractions page, by clicking on an attraction card, it displays the attraction detail page of that attraction.
 
-I want to migrate all the styling towards NextUI version 2.4.8. Help me switch each page and component to the new styling version
+I am now working on the Apartment page where I want to have a short image gallery, with a button to click to see
+the full image gallery, which is scrollable and responsive. From both the short and full gallery,
+I can click on a single image and open the swiper for all the apartment images.
+The swiper starts from the current image I clicked on.
+
+I am now improving the UI, by creating nicer and more efficient buttons: in particular, I want to place the "See Other Images"
+ text on the last blurred image that onclick brings me to the full gallery. I also want to make
+ the go back buttons more integrated into the galleries and swiper (suggest me the best way to do it,
+ I'd like to have a button which llooks like something native from the gallery). For the buttons
+ we can use some styling already applied at the homepage buttons

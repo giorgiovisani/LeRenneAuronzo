@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import {useLanguage} from '../context/LanguageContext';
@@ -60,33 +61,37 @@ const AttractionDetail: React.FC = () => {
   const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${attraction.lat},${attraction.lng}`;
 
   return (
-    <div className="attraction-detail">
-      <h1 className="attraction-title">{t(attraction.name)}</h1>
-      <img src={`${PUBLIC_URL}${attraction.image}`} alt={t(attraction.name)}
-           className="attraction-image"/>
-      <p className="attraction-description">{t(attraction.longDescription)}</p>
-      <div className="attraction-map-container">
-        <div className="attraction-map-section">
-          <h2 className="attraction-map-title">{t('attractionDetail.getThere')}</h2>
-          <p className="attraction-map-description">{t(attraction.getThere)}</p>
+      <div className="attraction-detail">
+        <h1 className="attraction-title">{t(attraction.name)}</h1>
+        <img src={`${PUBLIC_URL}${attraction.image}`} alt={t(attraction.name)}
+             className="attraction-image"/>
+        {/*<p className="attraction-description">{t(attraction.longDescription)}</p>*/}
+        <p
+            className="attraction-description"
+            dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(t(attraction.longDescription))}}
+        />
+        <div className="attraction-map-container">
+          <div className="attraction-map-section">
+            <h2 className="attraction-map-title">{t('attractionDetail.getThere')}</h2>
+            <p className="attraction-map-description">{t(attraction.getThere)}</p>
+          </div>
+          <div className="attraction-map-section">
+            <iframe
+                title="Google Map"
+                width="100%"
+                height="300"
+                frameBorder="0"
+                style={{border: 0}}
+                src={mapSrc}
+                allowFullScreen
+            />
+          </div>
         </div>
-        <div className="attraction-map-section">
-          <iframe
-            title="Google Map"
-            width="100%"
-            height="300"
-            frameBorder="0"
-            style={{border: 0}}
-            src={mapSrc}
-            allowFullScreen
-          />
+        <div className="mt-4">
+          <h2 className="attraction-slider-title">{t('attractionDetail.secondaryPicsTitle')}</h2>
+          <ImageSlider images={images} alt="attraction secondary pics"/>
         </div>
       </div>
-      <div className="mt-4">
-        <h2 className="attraction-slider-title">{t('attractionDetail.secondaryPicsTitle')}</h2>
-        <ImageSlider images={images} alt="attraction secondary pics"/>
-      </div>
-    </div>
   );
 };
 
