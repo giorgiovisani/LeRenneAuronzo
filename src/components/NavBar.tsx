@@ -1,73 +1,101 @@
-import {useTranslation} from 'react-i18next';
-import {useLanguage} from '../context/LanguageContext';
-import {useState} from 'react';
-import { Navbar, Button, Link, Image } from "@nextui-org/react";
-
-// Check if NextUI components are imported correctly
-console.log({ Navbar, Button, Link, Image });
+import { useTranslation } from 'react-i18next';
+import { useLanguage } from '../context/LanguageContext';
+import { useState, useEffect, useRef } from 'react';
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi"; // Menu icons
+import { FaGlobeEurope } from "react-icons/fa"; // Alternative Language Icons
 
 interface NavBarProps {
   basename: string;
 }
 
 export const NavBar: React.FC<NavBarProps & { handleBookingClick: () => void }> = ({ basename, handleBookingClick }) => {
-
-  const {t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
   const { changeLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
-  const PUBLIC_URL = import.meta.env.BASE_URL;
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  // const PUBLIC_URL = import.meta.env.BASE_URL;
+
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleLanguageChange = (lng: string) => {
     changeLanguage(lng);
     i18n.changeLanguage(lng);
+    setIsLanguageOpen(false); // Close dropdown after selection
   };
 
-  // Extract the navbar items from the JSON file
-const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key => !['title', 'utilities'].includes(key));
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsLanguageOpen(false);
+      }
+    }
+
+    if (isLanguageOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isLanguageOpen]);
+
+  const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key => !['title', 'utilities'].includes(key));
+
   return (
     <nav className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Navbar brand */}
           <div className="flex items-center">
-            <a href={`${basename}`}
-               className="text-xl font-bold text-gray-300 hover:text-white hover:font-bold no-underline">
+            <a href={`${basename}`} className="text-xl font-bold text-gray-300 hover:text-white hover:font-bold no-underline">
               {t('navbar.title')}
             </a>
           </div>
 
-          {/* Navbar toggler for mobile view */}
-          <div className="flex md:hidden">
+          {/* Navbar toggler & language switcher for mobile */}
+          <div className="flex md:hidden items-center space-x-4">
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="bg-black inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+              className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all transform hover:scale-110 shadow-lg"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
-              <span className="sr-only">Open main menu</span>
-              {/* Menu open: "hidden", Menu closed: "block" */}
-              <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none"
-                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"/>
-              </svg>
-              {/* Menu open: "block", Menu closed: "hidden" */}
-              <svg className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none"
-                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
-              </svg>
+              <span className="sr-only">Toggle navigation menu</span>
+              {isOpen ? (
+                <HiX className="w-7 h-7 transition-all duration-300" />
+              ) : (
+                <HiOutlineMenuAlt3 className="w-7 h-7 transition-all duration-300" />
+              )}
             </button>
 
-            {/* Language switcher buttons for mobile view */}
-            <div className="flex md:hidden space-x-2 ml-4">
-              <button onClick={() => handleLanguageChange('it')}
-                      className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
-                <img src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" className="h-6 w-6"/>
+            {/* Language Switcher Dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+                className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all transform hover:scale-110 shadow-lg flex items-center space-x-2"
+              >
+                <FaGlobeEurope className="w-6 h-6" /> {/* Change to any alternative */}
               </button>
-              <button onClick={() => handleLanguageChange('en')}
-                      className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
-                <img src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" className="h-6 w-6"/>
-              </button>
-              {/*<p className="text-gray-300 text-sm">{language}</p>*/}
+
+              {/* Dropdown Menu */}
+              {isLanguageOpen && (
+                <div className="absolute right-0 mt-2 w-32 bg-gray-900 rounded-lg shadow-xl z-50 overflow-hidden border border-gray-700">
+                  <button
+                    className="w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition"
+                    onClick={() => handleLanguageChange("en")}
+                  >
+                    English
+                  </button>
+                  <button
+                    className="w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition"
+                    onClick={() => handleLanguageChange("it")}
+                  >
+                    Italiano
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
@@ -93,20 +121,6 @@ const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key
               )
             ))}
           </div>
-
-
-          {/* Language switcher buttons for desktop view */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button onClick={() => handleLanguageChange('it')}
-                    className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
-              <img src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" className="h-6 w-6"/>
-            </button>
-            <button onClick={() => handleLanguageChange('en')}
-                    className="focus:outline-none hover:shadow-lg hover:scale-110 transition-transform">
-              <img src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" className="h-6 w-6"/>
-            </button>
-            {/*<p className="text-gray-300 text-sm">{language}</p>*/}
-          </div>
         </div>
       </div>
 
@@ -115,7 +129,7 @@ const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navbarItems.map((item, index) => (
             <a key={index} href={`${basename}#/${item}`}
-               className="text-gray-300 hover:text-white hover:font-bold block font-medium no-underline">
+              className="text-gray-300 hover:text-white hover:font-bold block font-medium no-underline">
               {t(`navbar.${item}`)}
             </a>
           ))}
@@ -124,57 +138,5 @@ const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key
     </nav>
   );
 };
-
-//
-//   return (
-//     <Navbar isBordered variant="floating">
-//       <Navbar.Brand>
-//         <Link href={`${basename}`} color="text" css={{ fontWeight: 'bold', fontSize: '1.25rem' }}>
-//           {t('navbar.title')}
-//         </Link>
-//       </Navbar.Brand>
-//
-//       <Navbar.Content hideIn="xs">
-//         {navbarItems.map((item, index) => (
-//           <Navbar.Link key={index} href={`${basename}#/${item}`} color="text">
-//             {t(`navbar.${item}`)}
-//           </Navbar.Link>
-//         ))}
-//       </Navbar.Content>
-//
-//       <Navbar.Content>
-//         {/* Language Switcher Buttons for Desktop View */}
-//         <Button auto light onClick={() => handleLanguageChange('it')}>
-//           <Image src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" width={24} height={24} />
-//         </Button>
-//         <Button auto light onClick={() => handleLanguageChange('en')}>
-//           <Image src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" width={24} height={24} />
-//         </Button>
-//       </Navbar.Content>
-//
-//       <Navbar.Toggle showIn="xs" onClick={() => setIsOpen(!isOpen)} />
-//
-//       <Navbar.Collapse isOpen={isOpen}>
-//         {navbarItems.map((item, index) => (
-//           <Navbar.CollapseItem key={index}>
-//             <Link href={`${basename}#/${item}`} color="text">
-//               {t(`navbar.${item}`)}
-//             </Link>
-//           </Navbar.CollapseItem>
-//         ))}
-//         <Navbar.CollapseItem>
-//           <Button auto light onClick={() => handleLanguageChange('it')}>
-//             <Image src={`${PUBLIC_URL}/flags/italy.png`} alt="Italian Flag" width={24} height={24} />
-//           </Button>
-//           <Button auto light onClick={() => handleLanguageChange('en')}>
-//             <Image src={`${PUBLIC_URL}/flags/uk.png`} alt="English Flag" width={24} height={24} />
-//           </Button>
-//         </Navbar.CollapseItem>
-//       </Navbar.Collapse>
-//     </Navbar>
-//   );
-// };
-
-
 
 export default NavBar;

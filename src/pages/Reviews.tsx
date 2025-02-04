@@ -12,45 +12,39 @@ const Reviews: React.FC = () => {
   }>;
 
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isSliding, setIsSliding] = useState(false);
 
   const goToNextReview = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
+    if (!isSliding) {
+      setIsSliding(true);
       setTimeout(() => {
         setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
-        setIsTransitioning(false);
-      }, 500); // Match the duration of the CSS transition
+        setIsSliding(false);
+      }, 500); // Matches the CSS transition
     }
   };
 
   const goToPreviousReview = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
+    if (!isSliding) {
+      setIsSliding(true);
       setTimeout(() => {
         setCurrentReviewIndex((prevIndex) =>
           prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
         );
-        setIsTransitioning(false);
-      }, 500); // Match the duration of the CSS transition
+        setIsSliding(false);
+      }, 500);
     }
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      goToNextReview();
-    }, 20000); // Change review every 20 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    const interval = setInterval(goToNextReview, 20000);
+    return () => clearInterval(interval);
   }, [reviews.length]);
 
-  const currentReview = reviews[currentReviewIndex];
-  const nextReviewIndex = (currentReviewIndex + 1) % reviews.length;
-  const nextReview = reviews[nextReviewIndex];
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center p-8 relative bg-cover bg-center"
+      className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 relative bg-cover bg-center"
       style={{
         backgroundImage: `url('./images/home_background.jpg')`,
       }}
@@ -59,13 +53,13 @@ const Reviews: React.FC = () => {
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       {/* Content */}
-      <div className="z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl w-full relative">
+      <div className="z-10 text-center w-full max-w-4xl relative">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fadeIn">
           {t('reviews.title')}
         </h1>
 
         {/* Review Card Container */}
-        <div className="relative overflow-hidden h-[500px] w-full"> {/* Adjust height as needed */}
+        <div className="relative w-[90vw] sm:w-[80vw] lg:w-[60vw] h-[55vh] sm:h-[50vh] overflow-hidden rounded-lg">
           {/* Left Arrow */}
           <div
             className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer opacity-0 hover:opacity-100 transition-opacity duration-300 z-20"
@@ -79,12 +73,7 @@ const Reviews: React.FC = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </div>
           </div>
@@ -102,54 +91,33 @@ const Reviews: React.FC = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
           </div>
 
-          {/* Current Review */}
-          <div
-            className={`absolute inset-0 bg-white/90 p-8 rounded-lg shadow-lg text-left transition-all duration-500 ease-in-out ${
-              isTransitioning ? 'opacity-0 -translate-x-full' : 'opacity-100 translate-x-0'
-            }`}
-          >
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
-              {currentReview.author}
-            </h2>
-            <div className="overflow-y-auto h-[300px] sm:h-[350px]"> {/* Scrollable container */}
-              <p className="text-lg sm:text-xl text-gray-700 mb-4 italic">
-                "{currentReview.recensione}"
-              </p>
-            </div>
-            <p className="text-sm sm:text-base text-gray-600">
-              <strong>Periodo:</strong> {currentReview.periodo} |{' '}
-              <strong>Notti:</strong> {currentReview.notti}
-            </p>
-          </div>
-
-          {/* Next Review */}
-          <div
-            className={`absolute inset-0 bg-white/90 p-8 rounded-lg shadow-lg text-left transition-all duration-500 ease-in-out ${
-              isTransitioning ? 'opacity-100 translate-x-0' : 'opacity-100 translate-x-full'
-            }`}
-          >
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
-              {nextReview.author}
-            </h2>
-            <div className="overflow-y-auto h-[300px] sm:h-[350px]"> {/* Scrollable container */}
-              <p className="text-lg sm:text-xl text-gray-700 mb-4 italic">
-                "{nextReview.recensione}"
-              </p>
-            </div>
-            <p className="text-sm sm:text-base text-gray-600">
-              <strong>Periodo:</strong> {nextReview.periodo} |{' '}
-              <strong>Notti:</strong> {nextReview.notti}
-            </p>
+          {/* Reviews Sliding Effect */}
+          <div className="relative h-full w-full overflow-hidden">
+            {reviews.map((review, index) => (
+              <div
+                key={index}
+                className={`absolute left-0 right-0 w-full h-full bg-white/90 p-8 rounded-lg shadow-lg text-left transition-transform duration-1000 ease-in-out opacity-0 ${
+                  index === currentReviewIndex
+                    ? "translate-x-0 opacity-100"
+                    : index > currentReviewIndex
+                    ? "translate-x-full opacity-0"
+                    : "-translate-x-full opacity-0"
+                }`}
+              >
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">{review.author}</h2>
+                <div className="overflow-y-auto h-[60%] sm:h-[70%] mb-6">
+                  <p className="text-lg sm:text-xl text-gray-700 mb-4 italic">"{review.recensione}"</p>
+                </div>
+                <p className="text-sm sm:text-base text-gray-600">
+                  <strong>Periodo:</strong> {review.periodo} | <strong>Notti:</strong> {review.notti}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 
