@@ -5,12 +5,12 @@ import { FaGlobeEurope } from "react-icons/fa"; // Language icon
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
-  const { changeLanguage, currentLanguage } = useLanguage();
+  const { changeLanguage, language } = useLanguage();
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleLanguageChange = (lng: string) => {
-    if (lng !== currentLanguage) {
+    if (lng !== language) {
       changeLanguage(lng);
       i18n.changeLanguage(lng);
     }

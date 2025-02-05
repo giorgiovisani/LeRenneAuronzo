@@ -146,7 +146,7 @@ const TheApartment: React.FC = () => {
                     pagination={{
                         type: "bullets", // Uses modern dots instead of fraction
                         // clickable: true,
-                        renderBullet: (index, className) => {
+                        renderBullet: (_, className) => {
                           return `<span class="${className} w-4 h-4 mx-1 rounded-full bg-gray-200 hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 shadow-md 
                           ${className.includes("swiper-pagination-bullet-active") ? "bg-blue-500 scale-125 shadow-lg shadow-blue-500" : ""}"></span>`;
                         },
