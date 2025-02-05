@@ -1,8 +1,6 @@
 # Next Steps
 
-- Navbar da telefono ok, ricentrare e displayare i bottoni anche da desktop
 - Swiper immagini appartamento da computer deve vedersi l'immagine non tagliata
-- Aggiungere un bottone alla home page per link alla sez. Appartamento
 - Fare lazy loading delle immagini per non appesantire il sito (e vedere se c'è anche altro modo per vedere le immagini subito, e caricarle in alta def con piu tempo a disposizione)
 - Controllare qual è la cosa peggiore che può succedermi per usare foto con copyright senza diritti
 - Sistemare descrizione e posizione gps di tutte le attrazioni

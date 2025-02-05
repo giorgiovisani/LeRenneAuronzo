@@ -1,59 +1,31 @@
 import { useTranslation } from 'react-i18next';
-import { useLanguage } from '../context/LanguageContext';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi"; // Menu icons
-import { FaGlobeEurope } from "react-icons/fa"; // Language icon
+import LanguageSwitcher from "./LanguageSwitcher"; // Import Language Switcher Component
 
 interface NavBarProps {
   basename: string;
+  handleBookingClick: () => void;
 }
 
-export const NavBar: React.FC<NavBarProps & { handleBookingClick: () => void }> = ({ basename, handleBookingClick }) => {
-  const { t, i18n } = useTranslation();
-  const { changeLanguage } = useLanguage();
+export const NavBar: React.FC<NavBarProps> = ({ basename, handleBookingClick }) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  // const PUBLIC_URL = import.meta.env.BASE_URL;
-
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  const handleLanguageChange = (lng: string) => {
-    changeLanguage(lng);
-    i18n.changeLanguage(lng);
-    setIsLanguageOpen(false); // Close dropdown after selection
-  };
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsLanguageOpen(false);
-      }
-    }
-
-    if (isLanguageOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [isLanguageOpen]);
 
   const navbarItems = Object.keys(t('navbar', { returnObjects: true })).filter(key => !['title', 'utilities'].includes(key));
 
   return (
     <nav className="bg-black text-white w-full">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Navbar Brand */}
-        <div className="flex items-center ">
+        <div className="flex items-center">
           <a href={`${basename}`} className="text-xl font-bold text-gray-300 hover:text-white hover:font-bold no-underline">
             {t('navbar.title')}
           </a>
         </div>
 
         {/* Desktop Navigation + Language Switcher */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-8">
           {/* Navbar Links */}
           {navbarItems.map((item, index) => (
             item === 'availability' ? (
@@ -76,32 +48,7 @@ export const NavBar: React.FC<NavBarProps & { handleBookingClick: () => void }> 
           ))}
 
           {/* Language Switcher for Desktop */}
-          <div className="relative" ref={dropdownRef}>
-            <button
-              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-              className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all transform hover:scale-110 shadow-lg flex items-center space-x-2"
-            >
-              <FaGlobeEurope className="w-6 h-6" />
-            </button>
-
-            {/* Dropdown Menu */}
-            {isLanguageOpen && (
-              <div className="absolute right-0 mt-2 w-32 bg-gray-900 rounded-lg shadow-xl z-50 overflow-hidden border border-gray-700">
-                <button
-                  className="w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition"
-                  onClick={() => handleLanguageChange("en")}
-                >
-                  English
-                </button>
-                <button
-                  className="w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition"
-                  onClick={() => handleLanguageChange("it")}
-                >
-                  Italiano
-                </button>
-              </div>
-            )}
-          </div>
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile Navbar & Language Switcher */}
@@ -122,32 +69,7 @@ export const NavBar: React.FC<NavBarProps & { handleBookingClick: () => void }> 
           </button>
 
           {/* Language Switcher for Mobile */}
-          <div className="relative" ref={dropdownRef}>
-            <button
-              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-              className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all transform hover:scale-110 shadow-lg flex items-center space-x-2"
-            >
-              <FaGlobeEurope className="w-6 h-6" />
-            </button>
-
-            {/* Dropdown Menu */}
-            {isLanguageOpen && (
-              <div className="absolute right-0 mt-2 w-32 bg-gray-900 rounded-lg shadow-xl z-50 overflow-hidden border border-gray-700">
-                <button
-                  className="w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition"
-                  onClick={() => handleLanguageChange("en")}
-                >
-                  English
-                </button>
-                <button
-                  className="w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition"
-                  onClick={() => handleLanguageChange("it")}
-                >
-                  Italiano
-                </button>
-              </div>
-            )}
-          </div>
+          <LanguageSwitcher />
         </div>
       </div>
 
