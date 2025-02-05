@@ -128,57 +128,62 @@ const TheApartment: React.FC = () => {
                 </Masonry>
               </div>
         ) : (
-            <div>
-              <button
-                  onClick={closeSwiper}
-                  className="sticky top-4 left-4 bg-gray-800/70 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 transition-all z-50"
-              >
-                <FaArrowLeft size={20}/>
-              </button>
-              <Swiper
+            <div className="fixed inset-0 flex flex-col justify-center items-center bg-black/80 z-50 p-4">
+                <button
+                    onClick={closeSwiper}
+                    className="absolute top-6 left-6 bg-gray-800/70 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 transition-all z-50"
+                >
+                    <FaArrowLeft size={20}/>
+                </button>
+
+                {/* Main Swiper */}
+                <Swiper
                     key={selectedImage ?? 0}
                     spaceBetween={10}
                     navigation={true}
                     pagination={{
-                      type: "fraction",
-                      clickable: true,
-                      renderFraction: (currentClass, totalClass) => {
-                        return `<span class="${currentClass} text-white bg-gray-900/80 px-3 py-1 rounded-md shadow-md text-lg font-semibold">
-                            <span class="text-blue-400">${currentClass}</span> / ${totalClass}
-                          </span>`;
-                      },
+                        type: "bullets", // Uses modern dots instead of fraction
+                        clickable: true,
+                        renderBullet: (index, className) => {
+                          return `<span class="${className} w-3 h-3 mx-1 rounded-full bg-gray-500 transition-all duration-300 transform hover:scale-125 hover:bg-blue-400"></span>`;
+                        },
                     }}
                     loop={true}
                     modules={[Navigation, Thumbs, Pagination]}
                     thumbs={{swiper: thumbsSwiper}}
                     initialSlide={selectedImage ?? 0}
-                    className="gallery-top"
+                    className="gallery-top max-w-5xl w-full"
                 >
-                  {images.map((image, index) => (
-                      <SwiperSlide key={index}>
-                        <img src={image} alt={`Apartment ${index}`} className="w-full rounded-lg"/>
-                      </SwiperSlide>
-                  ))}
+                    {images.map((image, index) => (
+                        <SwiperSlide key={index} className="flex justify-center">
+                            <img
+                                src={image}
+                                alt={`Apartment ${index}`}
+                                className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
 
+                {/* Thumbnail Swiper */}
                 <Swiper
                     onSwiper={(swiper: SwiperClass) => setThumbsSwiper(swiper)}
                     spaceBetween={10}
                     slidesPerView={4}
                     freeMode={true}
                     watchSlidesProgress={true}
-                    className="gallery-thumbs mt-4"
+                    className="gallery-thumbs mt-4 max-w-5xl w-full"
                 >
-                  {images.map((image, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                            src={image}
-                            alt={`Thumbnail ${index}`}
-                            className="w-full h-20 object-cover rounded-lg cursor-pointer"
-                            onClick={() => setSelectedImage(index)}
-                        />
-                      </SwiperSlide>
-                  ))}
+                    {images.map((image, index) => (
+                        <SwiperSlide key={index} className="cursor-pointer">
+                            <img
+                                src={image}
+                                alt={`Thumbnail ${index}`}
+                                className="w-full h-20 object-cover rounded-lg"
+                                onClick={() => setSelectedImage(index)}
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
               </div>
               )}
