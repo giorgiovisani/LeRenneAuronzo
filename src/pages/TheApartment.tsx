@@ -86,8 +86,8 @@ const TheApartment: React.FC = () => {
 
                   {/* Text Overlay */}
                   <div
-                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
-                  <span className="text-white text-lg font-semibold">
+                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg text-center">
+                  <span className="text-white text-lg font-semibold max-w-xs sm:max-w-sm">
                     Show other images
                   </span>
                   </div>
@@ -128,10 +128,10 @@ const TheApartment: React.FC = () => {
                 </Masonry>
               </div>
         ) : (
-            <div className="fixed inset-0 flex flex-col justify-center items-center bg-black/80 z-50 p-4">
+            <div className="fixed inset-0 flex flex-col justify-center items-center bg-gray-800 z-50 p-4">
                 <button
                     onClick={closeSwiper}
-                    className="absolute top-6 left-6 bg-gray-800/70 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 transition-all z-50"
+                    className="absolute top-6 left-6 bg-gray-800/70 text-white p-3 border-3 border-white rounded-full shadow-lg hover:bg-gray-900 transition-all z-50"
                 >
                     <FaArrowLeft size={20}/>
                 </button>
@@ -143,9 +143,10 @@ const TheApartment: React.FC = () => {
                     navigation={true}
                     pagination={{
                         type: "bullets", // Uses modern dots instead of fraction
-                        clickable: true,
+                        // clickable: true,
                         renderBullet: (index, className) => {
-                          return `<span class="${className} w-3 h-3 mx-1 rounded-full bg-gray-500 transition-all duration-300 transform hover:scale-125 hover:bg-blue-400"></span>`;
+                          return `<span class="${className} w-4 h-4 mx-1 rounded-full bg-gray-200 hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 shadow-md 
+                          ${className.includes("swiper-pagination-bullet-active") ? "bg-blue-500 scale-125 shadow-lg shadow-blue-500" : ""}"></span>`;
                         },
                     }}
                     loop={true}
@@ -155,7 +156,7 @@ const TheApartment: React.FC = () => {
                     className="gallery-top max-w-5xl w-full"
                 >
                     {images.map((image, index) => (
-                        <SwiperSlide key={index} className="flex justify-center">
+                        <SwiperSlide key={index} className="flex justify-center bg-gray-800">
                             <img
                                 src={image}
                                 alt={`Apartment ${index}`}
