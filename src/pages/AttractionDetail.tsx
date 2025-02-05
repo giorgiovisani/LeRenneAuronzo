@@ -64,7 +64,7 @@ const AttractionDetail: React.FC = () => {
       <div className="attraction-detail">
         <h1 className="attraction-title">{t(attraction.name)}</h1>
         <img src={`${PUBLIC_URL}${attraction.image}`} alt={t(attraction.name)}
-             className="attraction-image"/>
+             className="attraction-image" loading="lazy"/>
         {/*<p className="attraction-description">{t(attraction.longDescription)}</p>*/}
         <p
             className="attraction-description"

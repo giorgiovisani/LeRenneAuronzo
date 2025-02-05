@@ -57,6 +57,7 @@ const TheApartment: React.FC = () => {
                 {/* Main Image */}
                 <div className="col-span-2">
                   <img src={images[0]} alt="Main" className="w-full h-full object-cover rounded-lg cursor-pointer"
+                       loading="lazy"
                        onClick={() => {
                          setShowSwiper(true);
                          setSelectedImage(0);
@@ -64,7 +65,7 @@ const TheApartment: React.FC = () => {
                 </div>
                 {images.slice(1, 4).map((image, index) => (
                     <div key={index}>
-                      <img src={image} alt={`Thumbnail ${index}`}
+                      <img src={image} alt={`Thumbnail ${index}`} loading="lazy"
                            className="w-full h-full object-cover rounded-lg cursor-pointer" onClick={() => {
                         setShowSwiper(true);
                         setSelectedImage(index + 1);
@@ -80,7 +81,7 @@ const TheApartment: React.FC = () => {
                   {/* Blurred Background */}
                   <img
                       src={images[5] || images[0]} // Use the first image or any other image as the background
-                      alt="Blurred Background"
+                      alt="Blurred Background" loading="lazy"
                       className="w-full h-full object-cover rounded-lg filter blur-sm"
                   />
 
@@ -117,6 +118,7 @@ const TheApartment: React.FC = () => {
                         <img
                             src={image}
                             alt={`Gallery Image ${index}`}
+                            loading="lazy"
                             className="w-full h-auto object-cover rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105"
                             onClick={() => {
                               setShowSwiper(true);
@@ -161,6 +163,7 @@ const TheApartment: React.FC = () => {
                                 src={image}
                                 alt={`Apartment ${index}`}
                                 className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                                loading="lazy"
                             />
                         </SwiperSlide>
                     ))}
@@ -181,6 +184,7 @@ const TheApartment: React.FC = () => {
                                 src={image}
                                 alt={`Thumbnail ${index}`}
                                 className="w-full h-20 object-cover rounded-lg"
+                                loading="lazy"
                                 onClick={() => setSelectedImage(index)}
                             />
                         </SwiperSlide>
