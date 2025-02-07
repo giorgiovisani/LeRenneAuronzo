@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { HiOutlineMenuAlt3, HiX } from "react-icons/hi"; // Menu icons
+import { HiX } from "react-icons/hi"; // Menu icons
 import LanguageSwitcher from "./LanguageSwitcher";
 import {CgMenuBoxed} from "react-icons/cg"; // Import Language Switcher Component
 
