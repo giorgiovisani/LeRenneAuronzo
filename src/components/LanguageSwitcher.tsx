@@ -33,9 +33,9 @@ const LanguageSwitcher: React.FC = () => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsLanguageOpen(prev => !prev)}
-        className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all transform hover:scale-110 shadow-lg flex items-center space-x-2"
+        className="bg-gray-800 p-2 md:p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all transform hover:scale-110 shadow-lg flex items-center space-x-2"
       >
-        <FaGlobeEurope className="w-6 h-6" />
+        <FaGlobeEurope className="w-6 h-6 md:w-7 md:h-7" />
       </button>
 
       {/* Dropdown Menu */}
