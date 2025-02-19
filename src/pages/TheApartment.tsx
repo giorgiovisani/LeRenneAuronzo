@@ -173,7 +173,7 @@ const TheApartment: React.FC = () => {
                   <img
                     src={image}
                     alt={`Apartment ${index}`}
-                    className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                    className="w-auto max-w-full max-h-[80vh] sm:max-h-[65vh] object-contain rounded-lg"
                     loading="lazy"
                   />
                 </SwiperSlide>
