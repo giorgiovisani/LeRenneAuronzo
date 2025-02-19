@@ -5,19 +5,30 @@
       "image": "/images/auronzo_lago_2.jpeg",
       "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
       "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per navigare, nuotare o semplicemente passeggiare lungo le sue rive sceniche.",
-      "link": "/attractions/lake-auronzo",
+      "link": "/attractions/servizi-auronzo",
       "getThere": "Il Lago di Auronzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5719,
       "lng": 12.3781
-    },    {
+    },    
+    {
       "name": "Lago di Auronzo",
       "image": "/images/auronzo_lago.jpg",
       "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
-      "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per navigare, nuotare o semplicemente passeggiare lungo le sue rive sceniche.",
+      "longDescription": "Arrivati in auto ad Auronzo di Cadore, si viene accolti dalla diga di 55 metri d’altezza che delimita il lago di Santa Caterina. Sulla sinistra fa bella mostra una vecchia cabina della funivia del Monte Agudo, oggi sostituita dalla moderna seggiovia che si trova in zona Reane/Taiarezze, e due Leoni alati di S.Marco simbolo della Serenissima che stanno a guardia dell’ingresso al ponte della diga stessa. A breve distanza si trova la chiesa di Santa Caterina di Alessandria, vergine e martire vissuta tra il 200 e il 300 dc , a cui è dedicato il lago. Auronzo, ‘la spiaggia delle Dolomiti’ è un'oasi di pace e tranquillità: un luogo ideale per passeggiate ed escursioni. Il piccolo e grazioso lido, raccolto nell'insenatura del lago, offre agli amanti della montagna anche gradevoli momenti di vita balneare. Non mancano svaghi e divertimenti: pesca alla trota nei laghi e nei torrenti, campi di tennis, maneggio e scuola di equitazione, campo di tiro al piattello, 200 km di sentieri segnati ed escursioni guidate a rifugi e bivacchi, noleggio mountain bike, minigolf. Il paese è anche sede di numerose manifestazioni culturali e attività mondane. Zona sciistica, offre ottime piste di discesa, fondo o sci alpinismo, ad un'altitudine compresa tra i 900 ed i 2500 metri, in uno scenario incantevole.",
       "link": "/attractions/lake-auronzo",
       "getThere": "Il Lago di Auronzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.5719,
       "lng": 12.3781
+    },
+    {
+      "name": "Leggenda di Auronzo",
+      "image": "/images/stemma_auronzo.jpg",
+      "shortDescription": "Perché il gallo che si trova nello stemma del comune di Auronzo? E perché occupa una parte importante del gonfalone?",
+      "longDescription": "Perché il gallo che si trova nello stemma del comune di Auronzo? E perché occupa una parte importante del gonfalone?\n\nIl Gallo impresso nello stemma ricorda una storia di confini conquistati con astuzia. Ve la raccontiamo sicuri di stuzzicare la vostra curiosità sulla cultura di questo comune del Cadore. Nel 1700 non esistevano registri dei terreni e questo causava spesso conflitti per i confini dei fondi. Alla ricerca di nuovi pascoli, molti agricoltori di Auronzo si spostarono verso Dobbiaco. Si decise di definire una volta per tutte il confine tra i territori di Auronzo e quelli di Dobbiaco. Per stabilire il confine territoriale tra i comuni di Dobbiaco e Auronzo, due ragazze sarebbero dovute partire dai due rispettivi paesi al cantare del gallo, ma la ragazza di Auronzo punse il gallo per anticiparne il canto e partì prima definendo così la linea di confine più a nord del previsto, nei pressi del Ponte della Marogna. Lì fu posta la pietra di confine tra le comunità di Auronzo di Cadore e Dobbiaco.",
+      "link": "/attractions/legenda-auronzo",
+      "getThere": "Le Tre Cime di Lavaredo possono essere raggiunte in auto o a piedi dal vicino villaggio di Auronzo.",
+      "lat": 46.6107,
+      "lng": 12.2919
     },
     {
       "name": "Tre Cime di Lavaredo",

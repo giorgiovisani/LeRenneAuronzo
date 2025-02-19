@@ -34,7 +34,7 @@ const TheApartment: React.FC = () => {
   }, [showSwiper]);
 
   useEffect(() => {
-    const imagePaths = Array.from({ length: 18 }, (_, i) =>
+    const imagePaths = Array.from({ length: 38 }, (_, i) =>
       `${PUBLIC_URL}images/apartment/${i + 1}.jpeg`
     );
     setImages(imagePaths);

@@ -1,4 +1,11 @@
-# React + TypeScript + Vite
+
+# Github Pages
+Il progetto è pushato su github con githbu pages, per hostare il sito. Preso spunto da blog per settare l'hosting
+[https://www.codingthesmartway.com/how-to-host-a-website-on-github-for-free/](blog di spunto)  
+
+Per fare resizing delle immagini e farle pesare meno: [https://imagy.app/bulk-image-resizer/](imagify)
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -48,3 +55,5 @@ export default tseslint.config({
   },
 })
 ```
+
+

@@ -1,5 +1,7 @@
 # Next Steps
 
+- Nello swiper da desktop, le immagini alte vengono tagliate. sistemare
+- Nelle recensioni, fare in modo che si possa fare lo swipe da mobile
 - Controllare qual è la cosa peggiore che può succedermi per usare foto con copyright senza diritti
 - Sistemare descrizione e posizione gps di tutte le attrazioni
 - Inserire keywords nel sito (soprattutto: Auronzo, Cortina, Casa Vacanze, b&b, Affitto, Holiday, lago, Cadore, Montagne, Passeggiate, )
