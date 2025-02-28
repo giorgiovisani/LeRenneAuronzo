@@ -5,7 +5,8 @@ import { useLanguage } from '../context/LanguageContext'; // Adjust the import p
 import attractionsEN from '../locales/attractions_eng.json'; // Adjust the path as necessary
 import attractionsIT from '../locales/attractions_it.json'; // Adjust the path as necessary
 import Search from '../components/Search'; // Import the Search component
-import '../App.css'; // Import the App.css file
+import '../App.css';
+import {Header} from "../components/Header.tsx"; // Import the App.css file
 
 interface Attraction {
   name: string;
@@ -65,23 +66,30 @@ const AttractionsPage: React.FC = () => {
     return <div className="p-8 text-center text-red-600">{error}</div>;
   }
 
+
   return (
-    <div className="attractions-page">
-      <h1 className="attractions-title">{t('attractions.title')}</h1>
-      <Search onSearch={handleSearch} onToggle={toggleSearch} isOpen={isSearchOpen} />
-      <div className="attractions-grid">
-        {filteredAttractions.map((attraction, index) => (
-          <AttractionCard
-            key={index}
-            name={attraction.name}
-            image={`${PUBLIC_URL}${attraction.image}`}
-            shortDescription={attraction.shortDescription}
-            longDescription={attraction.longDescription} // Can be used for hover effect if needed
-            link={attraction.link}
-          />
-        ))}
+    <>
+      <Header
+        title={t("attractions.title")}
+        backgroundImage={`${PUBLIC_URL}images/antorno_lago.jpg`}
+      />
+      <div className="attractions-page">
+        {/*<h1 className="attractions-title">{t('attractions.title')}</h1>*/}
+        <Search onSearch={handleSearch} onToggle={toggleSearch} isOpen={isSearchOpen} />
+        <div className="attractions-grid">
+          {filteredAttractions.map((attraction, index) => (
+            <AttractionCard
+              key={index}
+              name={attraction.name}
+              image={`${PUBLIC_URL}${attraction.image}`}
+              shortDescription={attraction.shortDescription}
+              longDescription={attraction.longDescription} // Can be used for hover effect if needed
+              link={attraction.link}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -212,20 +212,23 @@ const TheApartment: React.FC = () => {
 
         {/* FEATURES SECTION ADDED HERE */}
         <section className="apartment-features mt-10">
-          <div className="container mx-auto">
-            <div className="flex flex-col sm:flex-row flex-wrap gap-8">
-              {/* Feature #1 */}
+          <div className="container mx-auto px-4">
+            {/*
+      grid-cols-1: single column on mobile
+      md:grid-cols-2: two columns at md (~768px) and above
+      gap-8: margin between columns (and rows if wrapped)
+    */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <FeatureSection
-                  image={`${PUBLIC_URL}/images/antorno_lago.jpg`}
+                  image={`${PUBLIC_URL}images/antorno_lago.jpg`}
                   title={t('apartment.features.0.title')}
-                  items={['Item 1', 'Item 2', 'Item 3']}
+                  items={t('apartment.features.0.items', { returnObjects: true }) as string[]}
               />
 
-              {/* Feature #2 */}
               <FeatureSection
-                  image={`${PUBLIC_URL}/images/antorno_lago.jpg`}
+                  image={`${PUBLIC_URL}images/apartment/20.jpeg`}
                   title={t('apartment.features.1.title')}
-                  items={['Item A', 'Item B', 'Item C']}
+                  items={t('apartment.features.1.items', { returnObjects: true }) as string[]}
               />
             </div>
           </div>
