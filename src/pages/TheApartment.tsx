@@ -50,7 +50,7 @@ const TheApartment: React.FC = () => {
         backgroundImage={`${PUBLIC_URL}images/antorno_lago.jpg`}
       />
 
-      <main className="apartment-main p-4">
+      <main className="apartment-main p-3">
         {!showFullGallery && !showSwiper ? (
             <div className="max-w-5xl mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
               {/* Responsive Grid: 2 columns on mobile, 3 on small screens and up */}
@@ -211,8 +211,7 @@ const TheApartment: React.FC = () => {
         </section>
 
         {/* FEATURES SECTION ADDED HERE */}
-        <section className="apartment-features mt-10">
-          <div className="container mx-auto px-4">
+        <section className="apartment-features">
             {/*
       grid-cols-1: single column on mobile
       md:grid-cols-2: two columns at md (~768px) and above
@@ -231,7 +230,6 @@ const TheApartment: React.FC = () => {
                   items={t('apartment.features.1.items', { returnObjects: true }) as string[]}
               />
             </div>
-          </div>
         </section>
       </main>
     </>
