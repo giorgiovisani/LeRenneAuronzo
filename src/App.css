@@ -106,6 +106,26 @@
   font-size: 1.125rem;
 }
 
+.attraction-description p {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  /*line-height: 1.6;*/
+}
+
+.attraction-description strong {
+  font-weight: bold;
+}
+
+.attraction-description em {
+    font-size: 1.12rem;
+  font-style: italic;
+}
+
+.attraction-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
 .attraction-map-container {
   display: flex;
   margin-top: 1rem;
@@ -474,4 +494,29 @@
 
 .swiper-button-prev {
   left: 10px; /* Position from the left */
+}
+
+.feature-section {
+  font-size: 1.11rem;
+  /*line-height: 1.5em;*/
+}
+
+.feature-section p {
+  font-size: 1.11rem;
+  color: #4a4a4a;
+  /*line-height: 1.6;*/
+}
+
+.feature-section strong {
+  font-weight: bold;
+}
+
+.feature-section em {
+    font-size: 1.12rem;
+  font-style: italic;
+}
+
+.feature-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }

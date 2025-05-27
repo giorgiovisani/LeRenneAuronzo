@@ -1,19 +1,16 @@
 {
   "attractions": [
     {
-      "name": "Negozi - Servizi Auronzo",
-      "image": "/images/auronzo_lago_2.jpeg",
-      "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
-      "longDescription": "Il Lago di Auronzo offre un'atmosfera tranquilla, ideale per navigare, nuotare o semplicemente passeggiare lungo le sue rive sceniche.",
-      "link": "/attractions/servizi-auronzo",
-      "getThere": "Il Lago di Auronzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.5719,
-      "lng": 12.3781
-    },    
+      "name": "Auronzo e le Dolomiti",
+      "image": "/images/auronzo_lago.jpg",
+      "shortDescription": "Il paese di Auronzo ha un posto d'onore al centro delle Dolomiti",
+      "longDescription": "**Auronzo** si trova nel sistema delle Dolomiti Settentrionali. Le montagne nei dintorni sono tra le più amate e su tutte spiccano le **Tre Cime di Lavaredo**, imponenti obelischi di roccia che sfiorano i tremila metri che ci offrono una vista mozzafiato. Sono soprannominate \"le *tre dita di dolomia*\" e sono composte da tre massicci: **la Grande**, (centrale) di 2.999 metri; la **Cima Ovest** di 2.973 metri; e la **Piccola** di 2.857 metri. Ricordiamo anche le **Marmarole**, il gruppo del **Popera** e i **Cadini**.\n\nLe **Dolomiti** sono state dichiarate **Patrimonio dell’Umanità UNESCO**, per la *“serie di paesaggi montani straordinariamente distintivi e di eccezionale bellezza naturale”* e per *“la varietà di forme scultoree* *delle cime verticali e pallide”*. \n\nInoltre ad Auronzo non mancano svaghi e divertimenti: **200 km di sentieri segnati ed escursioni guidate** a rifugi e bivacchi (*per maggiori informazioni e curiosità: [CAI Auronzo](https://www.caiauronzo.it/curiosita.html)*) , noleggio mountain bike, minigolf, pesca alla trota nei laghi e nei torrenti, campi di tennis, maneggio e scuola di equitazione, campo di tiro al piattello. Il paese è anche sede di numerose manifestazioni culturali e attività mondane. E’ inoltre zona sciistica, offrendo piste di discesa, fondo o sci alpinismo, ad un'altitudine compresa tra i 900 ed i 2500 metri, in uno scenario incantevole.\n",
+      "link": "/attractions/auronzo-dolimites"
+    },
     {
       "name": "Lago di Auronzo",
       "image": "/images/auronzo_lago.jpg",
-      "shortDescription": "Un lago tranquillo ideale per navigare, nuotare o passeggiare.",
+      "shortDescription": "Lago soleggiato e immerso nel verde, incastonato tra le Dolomiti",
       "longDescription": "Arrivati in auto ad Auronzo di Cadore, si viene accolti dalla diga di 55 metri d’altezza che delimita il lago di Santa Caterina. Sulla sinistra fa bella mostra una vecchia cabina della funivia del Monte Agudo, oggi sostituita dalla moderna seggiovia che si trova in zona Reane/Taiarezze, e due Leoni alati di S.Marco simbolo della Serenissima che stanno a guardia dell’ingresso al ponte della diga stessa. A breve distanza si trova la chiesa di Santa Caterina di Alessandria, vergine e martire vissuta tra il 200 e il 300 dc , a cui è dedicato il lago. Auronzo, ‘la spiaggia delle Dolomiti’ è un'oasi di pace e tranquillità: un luogo ideale per passeggiate ed escursioni. Il piccolo e grazioso lido, raccolto nell'insenatura del lago, offre agli amanti della montagna anche gradevoli momenti di vita balneare. Non mancano svaghi e divertimenti: pesca alla trota nei laghi e nei torrenti, campi di tennis, maneggio e scuola di equitazione, campo di tiro al piattello, 200 km di sentieri segnati ed escursioni guidate a rifugi e bivacchi, noleggio mountain bike, minigolf. Il paese è anche sede di numerose manifestazioni culturali e attività mondane. Zona sciistica, offre ottime piste di discesa, fondo o sci alpinismo, ad un'altitudine compresa tra i 900 ed i 2500 metri, in uno scenario incantevole.",
       "link": "/attractions/lake-auronzo",
       "getThere": "Il Lago di Auronzo è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -23,19 +20,33 @@
     {
       "name": "Leggenda di Auronzo",
       "image": "/images/stemma_auronzo.jpg",
-      "shortDescription": "Perché il gallo che si trova nello stemma del comune di Auronzo? E perché occupa una parte importante del gonfalone?",
-      "longDescription": "Perché il gallo che si trova nello stemma del comune di Auronzo? E perché occupa una parte importante del gonfalone?\n\nIl Gallo impresso nello stemma ricorda una storia di confini conquistati con astuzia. Ve la raccontiamo sicuri di stuzzicare la vostra curiosità sulla cultura di questo comune del Cadore. Nel 1700 non esistevano registri dei terreni e questo causava spesso conflitti per i confini dei fondi. Alla ricerca di nuovi pascoli, molti agricoltori di Auronzo si spostarono verso Dobbiaco. Si decise di definire una volta per tutte il confine tra i territori di Auronzo e quelli di Dobbiaco. Per stabilire il confine territoriale tra i comuni di Dobbiaco e Auronzo, due ragazze sarebbero dovute partire dai due rispettivi paesi al cantare del gallo, ma la ragazza di Auronzo punse il gallo per anticiparne il canto e partì prima definendo così la linea di confine più a nord del previsto, nei pressi del Ponte della Marogna. Lì fu posta la pietra di confine tra le comunità di Auronzo di Cadore e Dobbiaco.",
-      "link": "/attractions/legenda-auronzo",
-      "getThere": "Le Tre Cime di Lavaredo possono essere raggiunte in auto o a piedi dal vicino villaggio di Auronzo.",
-      "lat": 46.6107,
-      "lng": 12.2919
+      "shortDescription": "Perché il gallo che si trova nello stemma del comune di Auronzo?",
+      "longDescription": "Perché nello [stemma del comune di Auronzo](http://www.comuni-italiani.it/025/005/stemma.html) e’ disegnato un **gallo**? \n\nIl Gallo impresso nello stemma ricorda una **storia di confini conquistati con astuzia**: nel 1700 non esistevano registri dei terreni e questo causava spesso conflitti per i confini dei fondi. Alla ricerca di nuovi pascoli, molti agricoltori di Auronzo si spostavano verso Dobbiaco. Si decise di definire una volta per tutte il **confine tra i territori di Auronzo e quelli di Dobbiaco**.\n\nPer stabilire il confine, due ragazze sarebbero dovute partire dai due rispettivi paesi al cantare del gallo, ma la ragazza di Auronzo punse il gallo per anticiparne il canto e partì prima definendo così la linea di confine più a nord del previsto, nei pressi del Ponte della Marogna. Lì fu posta la pietra di confine tra le comunità di Auronzo di Cadore e Dobbiaco.\n",
+      "link": "/attractions/legenda-auronzo"
     },
     {
       "name": "Tre Cime di Lavaredo",
       "image": "/images/tre_cime.jpg",
-      "shortDescription": "Famose cime montuose nelle Dolomiti.",
-      "longDescription": "Le Tre Cime di Lavaredo sono una famosa destinazione per escursioni e arrampicate con viste mozzafiato.",
+      "shortDescription": "Spettacolari cime montuose, regine delle Dolomiti",
+      "longDescription": "### **Trekking attorno alle Tre Cime di Lavaredo**\n\nLe [Tre Cime di Lavaredo]( [www.trecimedilavaredo.it](https://www.trecimedilavaredo.it/)) sono tra le montagne più iconiche delle Dolomiti, una meta imperdibile per chi ama il trekking e i paesaggi mozzafiato. Il sentiero ad anello che le circonda offre **uno dei panorami più spettacolari dell’intero arco alpino**, permettendo di ammirarle da ogni angolazione in un'escursione adatta a tutti, dagli escursionisti esperti alle famiglie con bambini abituati a camminare.\n\nL'**itinerario classico** ha una lunghezza di circa **9,5 km**, con un **dislivello** contenuto di **circa 400 metri**. La durata della camminata è di **3-4 ore**, a seconda del passo e delle soste lungo il percorso. Il consiglio è di partire **presto al mattino**, sia per evitare il traffico lungo la strada a pedaggio che porta al [Rifugio Auronzo](https://www.trecimedilavaredo.it/), sia per trovare parcheggio facilmente. L’accesso in auto è a pagamento, ma vale la pena per immergersi fin da subito in un paesaggio straordinario.\n\n### **L’itinerario passo dopo passo**\n\nLa partenza avviene dal **Rifugio Auronzo** (2.320 m), facilmente raggiungibile in auto. Da qui, il sentiero procede in leggera salita fino al [Rifugio Lavaredo](https://www.dolomiti.org/it/auronzo/esperienze/rifugi/rifugio-lavaredo/) (2.344 m), un primo punto di sosta perfetto per chi vuole godersi il panorama. Continuando la salita si arriva alla **Forcella Lavaredo** (2.454 m), dove per la prima volta si può ammirare **il lato nord delle Tre Cime**, probabilmente il più iconico.\n\nDa qui il sentiero scende dolcemente fino al magnifico [Rifugio Locatelli \\- Dreizinnenhütte](https://www.dreizinnenhuette.com/it/) (2.405 m), punto panoramico d’eccezione. Il rifugio è uno dei luoghi migliori per una pausa: la vista frontale sulle Tre Cime è semplicemente mozzafiato. Da questo punto si inizia il rientro seguendo un sentiero che passa accanto a piccoli laghi alpini e conduce nuovamente verso il Rifugio Auronzo.\n\n### **Dove mangiare dopo l’escursione**\n\nDopo la camminata, non c’è niente di meglio che concedersi **un pranzo rilassante con vista**. A pochi minuti dal punto di partenza si trova la [Malga Rin Bianco](https://www.rinbianco.com/), un’accogliente malga che offre piatti tipici della tradizione alpina in una cornice spettacolare. Qui potrai assaporare **piatti fatti in casa** come canederli, polenta e formaggi locali, mentre ti godi la tranquillità della natura circostante.\n\nQuesto percorso regala **un’esperienza unica tra le Dolomiti**, unendo natura, avventura e tradizione gastronomica. Se ami la montagna, il trekking attorno alle Tre Cime di Lavaredo è **un’escursione da non perdere\\!** \uD83D\uDEB6\u200D♂\uFE0F\uD83C\uDFD4\uFE0F",
       "link": "/attractions/tre-cime",
+      "getThere": "Da Auronzo, guidare in direzione di Misurina. Appena usciti dal paese di Misurina, prendere svolta a destra segnalata direzione Tre Cime di Lavaredo. Sulla strada si incontrano in succesione il Lago di Antorno, la Malga Rin Bianco e il casello del pedaggio. Proseguire fino al parcheggio del Rifugio Auronzo.",
+      "lat": 46.61221690683942,
+      "lng": 12.295335493525492
+    },
+    {
+      "name": "Auronzo per Bimbi",
+      "image": "/images/auronzo-bimbi/6.jpg",
+      "shortDescription": "Giochi e Divertimenti per i più piccoli, ricchi di adrenalina",
+      "longDescription": "## **Divertimenti attorno al Lago di Santa Caterina**\n\n**Parchi Giochi gratuiti** \n\n- presso lo Chalet Stella Alpina, ci sono ponti di corda, una breve zip line e scivoli.\t  \n- sull’altra sponda del lago, davanti al bar Juventus, troviamo altri giochi per i bimbi e panchine all’ombra.\t   \n- nei pressi della spiaggia di sabbia, davanti al Bar Bucintoro, oltre alle altalene e scivoli, c’è un’originale installazione in legno a forma di barca  \n\n**Un Giro in Pedalò/Canoa** \n\nIl noleggio di pedalò e di canoe è organizzato dallo Chalet Stella Alpina. E’ inoltre possibile praticare **Corsi base di canoa a livello amatoriale** organizzati dall’asd Canoa Kayak Auronzo Misurina (per adulti e bambini dagli 8 anni in su).\n\n**Piccola Piscina del Bucintoro** (in riva al lago) per gli amanti del nuoto all’aperto, di fronte al lago di Auronzo, in prossimità della zona adibita a spiaggia.\n\n## **Sport e Divertimenti all’aria aperta** \n\n- **Tennis**: Il [Tennis club Auronzo](https://auronzomisurina.it/tennis-club-auronzo/) si trova In Via Roma e dispone di 3 campi da Tennis in terra rossa e possibilità di lezioni.  \n    \n- **Minigolf:** Parco Giochi dotato anche di Minigolf da **18 buche**, campi bocce, ping-pong presso l’[Hotel Cacciatori](https://www.albergo-ristorante-cacciatori.com/minigolf/), aperto anche al pubblico dalle 9:00 alle 22:00.  \n    \n- **Fattoria Didattica:** L’[Agriturismo “Ai Lares”](http://www.confagricolturatreviso.it/promo-agriturismo/ristorazione/ai-lares-bl/) è una bellissima struttura immersa nel verde del passo di Sant’Antonio. Nei mesi estivi propone una serie di attività per bambini, ideate per far conoscere la vita di montagna e l’importanza del rispetto della natura.  \n    \n- **Nevelandia:** l’[alternativa alle piste da sci in inverno per i bimbi](https://www.sappadadolomiti.com/attivita/nevelandia/). E’ un grande parco giochi sulla neve a Sappada, a 30 km da Auronzo. Sorge su una superficie innevata di circa 70.000 mq dove si trovano varie piste per lo snow-tubing (la divertentissima discesa con i gommoni), piste per bob e slittini, giochi gonfiabili, giostre per bambini e il divertente “Nevelandia Village”: il colorato villaggio gonfiabile con animazione dedicata ai bimbi, che comprende anche una zona dedicata al pattinaggio.\n\n## **Fun Bob** \n\nIl [Fun Bob di Auronzo di Cadore](https://www.monteagudo.it/fun-bob/) è una monorataia che si snoda per più di 3 km, partendo da un’altitudine di 1361 metri e percorrendo il versante del Monte Agudo che durante l’inverno ospita le piste da sci. Durante la discesa si raggiungono velocità fino a 45 km/h. E’ possibile raggiungere il punto di lancio in passeggiata o utilizzando il veloce e comodo impianto di risalita. \n\nAcquisite le semplici manovre di frenata e discesa e indossate le cinture, nel rispetto delle norme di sicurezza, si scende giù per il pendio a bordo del bob, emozionandosi per ogni curva e tornante delle rotaie. E’ un’esperienza per tutti, un’attività davvero divertente.  \n\nI bambini al di sotto dei 7 anni possono provare quest’esperienza accompagnati dai propri genitori. Dagli 8 anni in su è possibile utilizzare il Fun Bob in completa autonomia. \n\n \n\n## **Parco Avventura “Tre Cime Adventure Park”**\n\nA pochissima distanza dal Fun Bob, nel comprensorio del Monte Agudo, troviamo il **Parco Avventura** [Tre Cime Adventure Park](https://www.monteagudo.it/tre-cime-adventure-park/), percorso **aereo sospeso su 43 piattaforme panoramiche** poste ad altezze diverse da terra: da 1,5-2 metri per i più piccini fino a 4, 6 e 14 metri. Ciascuno potrà scegliere i percorsi più adatti alle proprie capacità, dai più semplici ai più impegnativi. \n\nSi cammina su ponti tibetani, scale, passerelle, liane e teleferiche che congiungono gli alti alberi del parco, sospesi su piattaforme che collegano un albero all’altro, nel rispetto della sicurezza. Vengono fornite imbracature e resistenti moschettoni.  \n\nPer gli amanti dell’adrenalina, in una splendida cornice delle 3 Cime, è possibile percorrere la **zipline** sopra il fiume Ansiei che collega le 2 sponde.   \n\n",
+      "link": "/attractions/auronzo-bimbi"
+    },
+    {
+      "name": "Monte Piana",
+      "image": "/images/monte-piana/1.jpg",
+      "shortDescription": "Alla scoperta dei luoghi della Prima Guerra Mondiale",
+      "longDescription": "Il Monte Piana è senza dubbio **una delle mete più attraenti delle Dolomiti**. Il panorama che si può ammirare dalla sua posizione regala la vista sulle montagne più belle - Tre Cime di Lavaredo, Paterno, Cadini di Misurina, Sorapiss, Cristallo, Croda Rossa ecc. - e sul Lago di Misurina.\n\nE’ appassionante raggiungere la montagna sia a piedi, sia in jeep in estate, sia in motoslitta d’inverno.\n\nQualora si decida di salire con la jeep o la motoslitta, si parte dal parcheggio delle Piste di Misurina, con arrivo al rifugio Bosi. I turisti possono prenotare la corsa utilizzando uno dei veicoli disponibili (sempre con autista). L’esperienza è emozionante e spettacolare per la vista panoramica sulla valle sottostante e sulle cime delle montagne circostanti.\n\nI visitatori possono poi scendere su un slittino per la discesa (il cui costo è compreso in quello della salita).\n\n \n\nIl Monte Piana è anche **un luogo di memoria**, carico di storia, ed è meta di tutti gli appassionati delle testimonianze delle battaglie combattute durante il primo conflitto mondiale poiché si possono ripercorrere gli stessi sentieri e le trincee, i camminamenti, le linee segnate dal filo spinato, le gallerie, le postazioni militari, realizzate nel 1915 ed oggi facenti parti di un “museo a cielo aperto”.\n\nIl Monte Piana demarca oggi il confine tra la regione del Veneto e quella del Trentino Alto Adige, ma durante la grande guerra fungeva da confine tra il Regno d’Italia e l’Impero austriaco. E’ questo il motivo per cui fu teatro di uno scontro tra Italia e Austria durato due anni.\n\n\nSi combatterono cruenti battaglie tra l’esercito italiano e quello austro-ungarico, che qui si scontrarono a più riprese tra il 1915 e il 1917. Fu una guerra che si combatté con condizioni climatiche estreme e con la necessità di scavare gallerie e trincee.",
+      "link": "/attractions/monte-piana",
       "getThere": "Le Tre Cime di Lavaredo possono essere raggiunte in auto o a piedi dal vicino villaggio di Auronzo.",
       "lat": 46.6107,
       "lng": 12.2919
@@ -43,27 +54,27 @@
     {
       "name": "Lago di Braies",
       "image": "/images/lago_braies.jpg",
-      "shortDescription": "Lago glaciale mozzafiato.",
-      "longDescription": "Il Lago di Braies è un lago meraviglioso, bello in ogni stagione. In autunno, alberi di ogni tonalità di rosso e giallo. Puoi noleggiare una barca a remi sul lago. Location dove è stato girato 'Tre passi dal cielo'.",
+      "shortDescription": "Lago glaciale mozzafiato",
+      "longDescription": "Il [Lago di Braies](https://www.lagodibraies.com/) è uno dei luoghi più suggestivi delle **Dolomiti** e una meta perfetta per chi cerca tranquillità, natura incontaminata e panorami mozzafiato. Questo lago cristallino, circondato da maestose montagne, cambia il suo aspetto a seconda della stagione, offrendo esperienze uniche in ogni momento dell'anno.\n\n* **Primavera e Estate:** Durante la **primavera e l’estate**, le acque del lago sono di un **azzurro intenso**, circondate da una fitta vegetazione verdeggiante che si riflette nelle acque cristalline. Le montagne circostanti, imponenti e spettacolari, sono completamente prive di neve, e il clima mite invita a passeggiate lungo il sentiero che circonda il lago. Il [sentiero attorno al lago](https://www.braies.org/cosa-fare/escursioni/attorno-al-lago-di-braies/) è facilmente percorribile ed è l'ideale per chi vuole godere della bellezza del lago senza sforzi eccessivi.\n\n* **Autunno:** In **autunno**, il paesaggio si trasforma in un trionfo di colori caldi, con **le foreste che si tingono di giallo e rosso**. È il momento perfetto per chi cerca una visita più tranquilla, lontano dalla folla estiva, ma con la stessa bellezza naturale. La riflessione delle montagne e dei boschi nelle acque del lago crea scenari davvero incantevoli, ideali per fotografie uniche.\n\n* **Inverno:** Infine, in **inverno**, il lago si congela, trasformandosi in una grande pista di ghiaccio naturale circondata dalle **vette innevate delle Dolomiti**. Questo paesaggio, silenzioso e maestoso, regala **un’atmosfera magica**, perfetta per chi ama la montagna anche d’inverno. Se sei fortunato, potrai anche godere del paesaggio durante le **prime nevicate**, quando il lago è ancora parzialmente aperto, creando contrasti spettacolari tra il bianco della neve e il blu dell’acqua.",
       "link": "/attractions/lake-braies",
-      "getThere": "Il Lago di Braies è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.7000,
-      "lng": 12.0000
+      "getThere": "Per raggiungere il Lago di Braies da **Auronzo di Cadore**, il viaggio dura circa **1 ora e 15 minuti**. Basta prendere la **SS51** in direzione nord verso **Dobbiaco** e poi seguire le indicazioni per il **Lago di Braies**. Il percorso è panoramico e ti permetterà di godere delle bellezze naturali delle Dolomiti.\n\nUna volta arrivati, troverai il parcheggio a pochi passi dal lago. Poiché questa è una delle mete più popolari della zona, ti consigliamo di **arrivare presto al mattino** per evitare di trovare il parcheggio pieno, specialmente durante la stagione estiva o nei fine settimana.",
+      "lat": 46.700476219590676,
+      "lng": 12.08511216279943
     },
     {
-      "name": "Lago di Misurina",
+      "name": "Misurina",
       "image": "/images/misurina.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Caratteristico paese a 1800 metri, porta d'ingresso per le 3 Cime",
       "longDescription": "Il Lago di Misurina è uno dei laghi più affascinanti delle Dolomiti. Per maggiori informazioni, visita <a href='https://www.example.com' target='_blank' rel='noopener noreferrer'>questo sito</a>.",
       "link": "/attractions/misurina",
-      "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
+      "getThere": "Per raggiungere Misurina da Auronzo di Cadore, si percorre la strada statale SS48 in direzione nord per circa 15 chilometri. Il tragitto offre scorci panoramici sulle Dolomiti e conduce direttamente al lago di Misurina, cuore pulsante della frazione.\nMisurina rappresenta una destinazione imperdibile per chi desidera immergersi nella bellezza delle Dolomiti, praticare attività all'aria aperta e beneficiare di un clima salubre e rigenerante\n",
       "lat": 46.5300,
       "lng": 12.1500
     },
     {
       "name": "Cibo e Prodotti Tipici",
       "image": "/images/cibo.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "La tradizione culinaria Cadorina, fatta di ingredienti locali e genuini",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/cibo-tipico",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -73,7 +84,7 @@
     {
       "name": "Mangiare in Malga",
       "image": "/images/malga.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Un tempo fattorie, le malghe sono ora ottime locande in ambienti vergini",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/malghe",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -83,9 +94,9 @@
     {
       "name": "Trekking e Sentieri",
       "image": "/images/bad_moos.jpg",
-      "shortDescription": "Complesso termale grandioso.",
+      "shortDescription": "Scopri la bellezza delle Dolomiti sempre piu intensa ad ogni passo",
       "longDescription": "Le Terme di Bad Moos offrono 25000 mq di spa, inclusi vari tipi di sauna, bagni turchi, piscine riscaldate interne ed esterne, uso della palestra, ecc. Opzioni di massaggio disponibili.",
-      "link": "/attractions/bad-moos-thermal-spa",
+      "link": "/attractions/trekking",
       "getThere": "Le Terme di Bad Moos sono facilmente raggiungibili in auto o con i mezzi pubblici dal villaggio di Auronzo.",
       "lat": 46.6850,
       "lng": 12.3050
@@ -93,17 +104,14 @@
     {
       "name": "Terme nei dintorni",
       "image": "/images/spa.jpg",
-      "shortDescription": "Complesso termale grandioso.",
-      "longDescription": "Le Terme di Bad Moos offrono 25000 mq di spa, inclusi vari tipi di sauna, bagni turchi, piscine riscaldate interne ed esterne, uso della palestra, ecc. Opzioni di massaggio disponibili.",
-      "link": "/attractions/spa",
-      "getThere": "Le Terme di Bad Moos sono facilmente raggiungibili in auto o con i mezzi pubblici dal villaggio di Auronzo.",
-      "lat": 46.6850,
-      "lng": 12.3050
+      "shortDescription": "Godetevi un momento di relax e benessere",
+      "longDescription": "Se sei alla ricerca di un’esperienza di **relax e benessere** immersa nella bellezza delle Dolomiti, nei dintorni di Auronzo di Cadore troverai diverse **spa e centri wellness** perfetti per rigenerare corpo e mente. Ogni struttura offre servizi esclusivi, combinando il comfort moderno con la magia del paesaggio alpino.\n\nEcco tre delle migliori opzioni per una giornata di puro benessere:\n\n* [Bad Moos \\- Aqua Spa Resort](https://www.badmoos.it/) [\\[\uD83C\uDF0EMoso](https://www.google.com/maps/search/Bad+Moos+-+Aqua+Spa+Resort%2C+Sesto%2C+Italia)\\]**:**  \n   Questo esclusivo **resort a 4 stelle superior** vanta un’area benessere di **2.500 m²**, alimentata da una **sorgente termale naturale** che arricchisce l’esperienza con le sue proprietà benefiche. Il centro include **piscine interne ed esterne, saune panoramiche, bagno turco e un’area fitness** per chi desidera mantenersi attivo. Tra le esperienze disponibili, il **Day Spa** permette di accedere a tutte le strutture con un kit di benvenuto, mentre il **Luxury Day** include anche una raffinata esperienza gastronomica con colazione, merenda e cena gourmet.\n\n* [Grien Spa](https://www.albergodiffusosauris.com/centro-spa-wellness/wellness-grien-spa/) [\\[\uD83C\uDF0E](https://www.google.com/maps/search/Bad+Moos+-+Aqua+Spa+Resort%2C+Sesto%2C+Italia)[Sauris](https://www.google.com/maps/search/Grien+SPA%2C+Sauris%2C+Italia)\\]:  \n  Situata nel cuore di uno dei **borghi più suggestivi delle Dolomiti**, Grien Spa è un'oasi di relax in cui la natura diventa parte integrante del benessere. Qui potrai rilassarti in **piscine panoramiche**, rigenerarti con il calore di **saune tradizionali e bagni di vapore** e provare **trattamenti olistici** ispirati alla natura circostante. L’atmosfera intima e raccolta, unita alla **vista mozzafiato sui boschi di Sauris**, la rende una destinazione ideale per chi cerca un’esperienza autentica e immersiva. \n\n* [Corte Spa](https://cortespa.it/) [\\[\uD83C\uDF0E](https://www.google.com/maps/search/Bad+Moos+-+Aqua+Spa+Resort%2C+Sesto%2C+Italia)[Borca di Cadore](https://www.google.com/maps/search/Corte+SPA%2C+Borca+di+Cadore%2C+Italia)\\]**:**  \n   Immersa tra le **montagne delle Dolomiti**, questa spa è un vero rifugio per chi desidera un momento di puro relax. Il centro offre **piscine riscaldate, sauna finlandese, bagno turco e percorsi benessere personalizzati** per il massimo della rigenerazione. Dopo un’intensa giornata all’aria aperta, è il luogo ideale per rilassarsi e recuperare le energie in un’atmosfera elegante e avvolgente.\n",
+      "link": "/attractions/spa"
     },
     {
       "name": "Escursioni in Bici",
       "image": "/images/bici.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Raggiungi luoghi incontaminati in mountain bike (anche elettrica)",
       "longDescription": "Questo straordinario itinerario ciclabile collega Auronzo a Misurina, la suggestiva \"Perla delle Dolomiti\". Il primo tratto, fino a Palùs San Marco (circa 15 km), è adatto a tutti grazie al percorso pianeggiante e scorrevole. Da qui, il sentiero diventa più avventuroso e stimolante, perfetto per gli amanti della mountain bike e dell’e-bike. L'attraversamento della secolare Foresta di Somadida aggiunge un tocco di magia all’esperienza.\n\nCompletata nel 2017, questa ciclabile sterrata garantisce un tragitto immerso nella natura, senza attraversamenti stradali, offrendo panorami spettacolari su vette iconiche come le Tre Cime di Lavaredo, il Sorapìss e il Cristallo. Un’avventura imperdibile per chi cerca un’esperienza autentica tra le meraviglie delle Dolomiti!",
       "link": "/attractions/bici",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -113,7 +121,7 @@
     {
       "name": "Cortina, perla delle Dolomiti",
       "image": "/images/cortina.jpg",
-      "shortDescription": "Città mondana e di lusso, famosa per lo sci",
+      "shortDescription": "Capitale del lusso, famoso comprensorio sciistico",
       "longDescription": "è una delle località di montagna più famose del mondo. Sede delle Olimpiadi invernali del 1956 e località sciistica per antonomasia, simbolo della mondanità italiana e internazionale, Cortina è da sempre una meta d’eccellenza per chi ama la montagna e i suoi paesaggi, lo sport ed il divertimento. è circondata da alte montagne rese uniche all'alba e al tramonto dai colori rosati delle rocce, composte di dolomia: l’Antelao, il Sorapiss, la Croda da Lago, la Croda Rossa, le Tofane e il Cristallo, gruppi dolomitici di rara bellezza. Stupenda è pure la muraglia naturale del Pomagagnon, che le fa da sfondo. Con i suoi 120 chilometri di piste, Cortina è una località top per gli appassionati dello sci. Le principali aree sciistiche sono l'Area Tofane, l'Area Faloria-Cristallo, l'Area 5 Torri-Lagazuoi e le Aree di San Vito-Auronzo-Misurina.",
       "link": "/attractions/cortina-perla-dolomiti",
       "getThere": "Si raggiunge in 40 minuti di guida, attarversando il passo Tre Croci (quota 1600 mslm) con splendide viste sulla vallata. 10 minuti Prima di entrare in paese, ci sono gli impianti da Sci dei Monti Faloria e Cristallo. ",
@@ -123,8 +131,8 @@
     {
       "name": "Bosco di Somadida",
       "image": "/images/somadida.jpg",
-      "shortDescription": "Bosco incontaminato, Riserva Didattica",
-      "longDescription": "A 1400 metri di altitudine, lungo la strada che collega Auronzo a Misurina, si estende la Foresta di Somadida, una riserva naturale di grande fascino e valore storico. Questo polmone verde, composto principalmente da abeti rossi, abeti bianchi e faggi, è un luogo dove la natura incontra la cultura: al suo interno si trovano il suggestivo Museo del Bosco, la Biblioteca del Bosco e un’area dedicata alla protezione delle farfalle. La foresta ha un passato affascinante: donata nel 1493 dalla Magnifica Comunità Cadorina alla Repubblica di Venezia, fornì legname pregiato per oltre tre secoli, fino al 1797. Oggi, Somadida è una meta ideale per chi desidera immergersi in un ambiente incontaminato, ricco di storia e biodiversità, perfetto per passeggiate rigeneranti e momenti di scoperta.",
+      "shortDescription": "Bosco incontaminato e Riserva didattica",
+      "longDescription": "La Foresta di Somadida, il più grande bosco del Cadore a 1400 metri di altitudine, è una delle più belle foreste delle Dolomiti. Custodisce al suo interno un patrimonio naturalistico e faunistico di grande valore tra cui abeti rossi, abeti bianchi, larici, faggi, frutti di bosco, cervi, caprioli. Il Reparto Carabinieri Biodiversità di Vittorio Veneto propone visite guidate settimanali (in genere il martedì) nei mesi di luglio ed agosto. Vengono organizzate anche mostre tematiche ed incontri con esperti, in qualche occasione anche concerti, letture e rappresentazioni.\n\n **Itinerari ed escursioni**\n\nDiversi sentieri percorrono la riserva, da semplici passeggiate a trekking più impegnativi fino a vie ferrate. Sono tre i percorsi pianeggianti, costituiti da stradelle forestali dal fondo regolare e piano, utilizzabili da tutti i visitatori anche disabili. Si dipanano poi vari sentieri per esperti, che raggiungono la parte alta della riserva. Questi percorsi sono segnati dal C.A.I. e raggiungono anche alcuni bivacchi in quota.\n\n**La Biblioteca del Bosco**\n\nUn piccolo museo naturalistico dove sono messi a disposizione varie decine di libri tematici sulla foresta e la natura: letture di vari autori tra cui Rigoni Stern, Jack London, Dino Buzzati,  Mauro Corona, manuali per riconoscere animali, piante, fiori, uccelli, racconti che raccolgono le antiche leggende ladine. La biblioteca è fornita anche di audio guide. \n\n**Un esemplare di *Raso***, la caratteristica zattera veneziana,  è visibile nella foresta in dimensioni reali. Realizzata con i tronchi abbattuti dalla Tempesta Vaia dell’Ottobre 2018\\. \n\n**Giardino delle Farfalle**  \nUn’area circoscritta con piccolo giardino dove si sono stabilite e diffuse numerose farfalle. Le si può ammirare soprattutto nella stagione tardo primaverile ed estiva.\n",
       "link": "/attractions/bosco-somadida",
       "getThere": "Per arrivare alla riserva partendo da Auronzo, segui la statale regionale SR48 in direzione Misurina fino a Palus San Marco. Superata la stazione del Corpo Forestale dello Stato, sulla sinistra si osserva un cartello che indica l'accesso al parcheggio della Foresta. Da qui si prosegue a piedi.",
       "lat": 46.53138364508213, 
@@ -133,7 +141,7 @@
     {
       "name": "Lago di Sorapis",
       "image": "/images/lago_sorapis.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Escursione wild per raggiungere questo lago glaciale",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/lake-sorapis",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -143,7 +151,7 @@
     {
       "name": "Sciare ad Auronzo",
       "image": "/images/sci_auronzo.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Comprensorio sciistico di Monte Agudo",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/sciare-auronzo",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -153,7 +161,7 @@
     {
       "name": "Sciare dintorni",
       "image": "/images/sci_dintorni.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Sciare a Misurina, Cortina, Val Pusteria (40 min di vaggio)",
       "longDescription": "<a https://www.dovesciare.it/localita/tre-cime-dolomiti> Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/sciare-dintorni",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -163,7 +171,7 @@
     {
       "name": "Sci di Fondo",
       "image": "/images/fondo.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "Una combinazione di sport all'aria aperta e natura incontaminata",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/fondo",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",
@@ -173,7 +181,7 @@
     {
       "name": "Ciaspolate",
       "image": "/images/ciaspole.jpg",
-      "shortDescription": "Lago glaciale turchese e meravigliosa escursione.",
+      "shortDescription": "L'esplorazione invernale regala vallate innevate e paesaggi mozzafiato",
       "longDescription": "Il Lago di Sorapis è un lago glaciale turchese e una meravigliosa escursione per escursionisti di media esperienza. La vista vale lo sforzo.",
       "link": "/attractions/ciaspole",
       "getThere": "Il Lago di Sorapis è facilmente raggiungibile in auto o con i mezzi pubblici dal villaggio di Auronzo.",

@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     phone: '+39 3478195020',
     email: 'aunpassodallagoauronzo@gmail.com',
     whatsapp: '+39 3478195020', // WhatsApp number
-    address: 'Via Riva da Corte 2, Auronzo (BL), Italy',
+    address: 'Via Riva da Corte 5, Auronzo (BL), Italy',
     Google: 'TODO'
 
   };

@@ -5,5 +5,7 @@
 - Mettere la mail giusta nel footer
 - Sistemare la visualizzazione delle immagini nelle attraction details
 - Pensare come strutturare la pagina delle attraction details per incorporare tutto cio che vuole mamma
-- Mettere gli highlights di casa e servizi in zona (foto con titolo e lista di punti nice)
-- Attrazione tra le prime 3 per auronzo sui bimbi
+- MEttere titolo Homepage in corsivo, o in generale piu bello (in particolare per la I maiuscola)
+- Mettere sottoelenchi puntati sotto Bagno e Cucina (forse no)
+- Mettere Markdown anche in Appartamento, sia per descrizione sia per le 3 card
+- Trovare un posto dove mettere i contatti utili degli uffici turistici (prendere da qua https://auronzomisurina.it/contatti/)

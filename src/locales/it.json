@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "title": "A un passo dal Lago",
+    "title": "i Cervi",
     "apartment": "Appartamento",
     "availability": "Prenota ora",
     "attractions": "Attrazioni",
@@ -8,7 +8,7 @@
     "reviews": "Dicono di noi"
   },
   "homepage": {
-    "title": "A un passo dal Lago - Auronzo",
+    "title": "i Cervi - appartamento Auronzo",
     "poetic_sentence": "La bellezza e la calma sono i veri compagni di una mente serena.",
     "author": "Anonimo",
     "what_to_do_around": "Esplora il Cadore",
@@ -20,32 +20,56 @@
   },
   "apartment": {
     "title": "Benvenuti",
-    "description": "L’appartamento si trova al secondo piano di una piacevole palazzina nel centro di Auronzo. E' confortevole e arredato con gusto, con finiture e mobili in legno. Estremamente funzionale, accoglie gli ospiti con un caldo abbraccio d’inverno e una fresca carezza d’estate. \nNonostante la posizione centrale, la struttura si trova in un'area residenziale a debita distanza dal traffico della strada principale, godendo di quiete e tranquillità a qualsiasi ora del giorno.\n\nLa casa è consigliata per 6 persone. Ci sono due camere da letto: una spaziosa camera con letto matrimoniale (che può essere disgiunto in due letti singoli), la seconda con 2 letti a castello.\nNell'ampio soggiorno è presente un divano letto matrimoniale estremamente confortevole e molto funzionale: è un divano pronto-letto, si apre in un attimo usando solo una mano, già rifatto con lenzuola e piumone.\n\nEntrando nell'appartamento si accede ad un ampio open space che comprende: angolo lettura con poltrona e mobile con giochi di società (adatti a bambini e adulti), soggiorno con divano e ampio mobile tv, cucina nuova e modernissima dotata di fornelli a induzione e elettrodomestici acquistati nella primavera 2024. \nE' presente anche un grazioso terrazzo, affacciato sull'ingresso della casa, con vista montagne. Un secondo terrazzo di servizio è accessibile dalla camera da letto.\n\nBagno finestrato di tendenza e completamente rinnovato. Lavabo a ciotola e rubinetterie di prestigio, appoggiati su un piano in legno massello. Doccia e sanitari moderni. Completamente accessoriato con dettagli raffinati.\n\nE' presente una lavasciuga nuova.\n\nLa cantina si trova al piano terra vicino alla porta di ingresso, attrezzata con panca e ripiani. C'è spazio per alloggiare bagagli, scarponi, sci/snowboard etc.\n\nAll'ingresso della proprietà è possibile scaricare i bagagli con facilità. È richiesto di impiegare il passaggio solo per il tempo strettamente necessario al carico e scarico.\n\nE' richiesto il silenzio notturno.\n",
+    "description": "L’appartamento si trova al secondo piano di una bella palazzina nel centro di Auronzo, vicinissima a tutti i servizi essenziali: supermercato, panetteria, macelleria, banca, poste. Gode di quiete e tranquillità poiché si trova in un'area residenziale a brevissima distanza dalla strada principale E' confortevole e arredato con gusto, con finiture raffinate e mobili e accessori funzionali, tipici in legno. La casa può ospitare fino a 4, massimo di 6 persone.\n\nCi sono due camere da letto, a cui si somma un divano letto:\n\n* 1 camera con letto matrimoniale (utilizzabile anche come due letti singoli),  \n* 1 camera con 2 letti a castello  \n* nell'ampio soggiorno è presente un divano letto matrimoniale di qualità (divano pronto-letto con apertura facilitata dove, senza dover rimuovere i cuscini di seduta, al suo interno si trovano già le lenzuola, il copriletto e i due cuscini su cui poter riposare).\n\nEntrando nell'appartamento si accede ad un gradevole open space che comprende:\n\n* angolo lettura con poltrona e mobile (con angolo giochi, per adulti e piccini, per trascorrere in allegria amabili passatempi)  \n* soggiorno con divano e ampia credenza/mobile tv,  \n* cucina nuova modernissima, dotata di fornelli a induzione e tutti gli elettrodomestici  nuovi, nuove anche le stoviglie e ogni accessorio. \n\nIl bagno è finestrato e completamente rinnovato e di tendenza, con doccia e sanitari moderni. E’ presente anche una lavasciuga, nuova anch’essa.\n\nC'è inoltre un grazioso terrazzo o poggiolo, con affaccio sull'ingresso della casa e con vista sulle montagne. Un secondo terrazzo di servizio è accessibile dalla 2^ camera da letto \n\nLa cantina si trova al piano terra vicino all'ingresso, attrezzata con panca e ripiani. C'è spazio per alloggiare bagagli, scarponi, sci/snowboard ... All'ingresso della proprietà è possibile scaricare i bagagli. Tuttavia è necessario occupare lo spazio antistante solo per il tempo strettamente necessario al carico/scarico. All'esterno, accanto alla zona verde curata a prato, c'è il garage con posto riservato. Ci dispiace, ma non sono ammessi animali.",
         "features": [
       {
-        "title": "Features dell'appartmento",
+        "title": "Dotazioni e Accessori",
         "image": "images/kitchen.jpg",
         "items": [
-          "Frigorifero",
-          "Forno a microonde",
-          "Lavastoviglie",
-          "Piano cottura ad induzione",
-          "Macchina per il caffè",
-          "Utensili da cucina",
-          "Divano letto matrimoniale",
-          "Smart TV",
-          "Wi-Fi veloce",
-          "Libri e giochi da tavolo",
-          "Ampie finestre con vista"
+          "Cucina nuova, piano induzione",
+          "Piatti, stoviglie, tovaglie, utensili",
+          "Bagno moderno, asciugamani",
+          "Aciugacapelli",
+          "Terrazzo per lettura/pasti",
+          "Fino a 6 posti letto",
+          "Wi-Fi gratuito",
+          "Lavasciuga nuova",
+          "Cantina/deposito",
+          "Giardino Condominiale",
+          "Posto Auto in Garage",
+          "Guide e Mappe turistiche",
+          "Giochi da tavolo"
         ]
       },
       {
-        "title": "Comfort e Relax",
-        "image": "images/living_room.jpg",
+        "title": "Servizi nei Dintorni",
+        "image": "images/auronzo_centro.jpeg",
         "items": [
-          "Macellaio",
-          "Fornaio",
-          "etc"
+          "Supermercato - 120m",
+          "Panetteria - 130m",
+          "Macelleria - 130m",
+          "Fermata Bus, p.zza Vigo - 150m  \n[DolomitiBus](www.dolomitibus.it) Linee 31, 33",
+          "Ufficio Postale - 270m",
+          "Pescheria - 400m",
+          "Stadio/Campo Sportivo - 450m",
+          "Noleggio Biciclette - 550m",
+          "Chiesa S. Giustina - 600m",
+          "[Pista Ghiaccio](https://auronzomisurina.it/pattinaggio/) - 600m",
+          "[Campi da Tennis](https://auronzomisurina.it/tennis-club-auronzo/) - 1km"
+        ]
+      },
+      {
+        "title": "Località nei Dintorni",
+        "image": "images/auronzo_centro.jpeg",
+        "items": [
+          "Misurina - 20Km",
+          "Cortina - 30km",
+          "Sappada - 30km",
+          "Foresta di Somadida - 15km",
+          "[Lago di Calalzo](https://www.cosafareincadore.it/lago-delle-tose-calalzo/) - 17km",
+          "Val Pusteria: Dobbiaco, San Candido, Sesto Pusteria (paese di Sinner) - 30km",
+          "Lago di Braies - 55km",
+          "Brunico - 70km"
         ]
       }
     ],

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 
 interface HeaderProps {
     title: string;
@@ -39,22 +40,20 @@ interface FeatureSectionProps {
 }
 
 export const FeatureSection: React.FC<FeatureSectionProps> = ({image, title, items}) => {
+    const markdownList = `\n\n${items.map(item => `- ${item}`).join("\n")}`;
+
     return (
         <div className="container max-w-5xl mx-auto mt-4 p-4 bg-white rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">{title}</h2>
             <div className="flex flex-col sm:flex-col bg-white rounded-lg overflow-hidden mt-8 mx-0">
                 {/* Image Section */}
-                <div className="w-full sm:w-1/3">
+                <div className="w-full">
                     <img src={image} alt={title} className="w-full h-full object-cover"/>
                 </div>
 
                 {/* Content Section */}
-                <div className="w-full sm:w-2/3 mt-4 flex flex-col justify-left">
-                    <ul className="list-disc list-inside text-lg text-gray-700">
-                        {items.map((item, index) => (
-                            <li key={index} className="mb-2">{item}</li>
-                        ))}
-                    </ul>
+                <div className="feature-section w-full mt-4 flex flex-col justify-left text-gray-700">
+                    <ReactMarkdown>{markdownList}</ReactMarkdown>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'tailwindcss/tailwind.css';
 import { FaArrowLeft } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs, Pagination } from 'swiper/modules';
 import { Swiper as SwiperClass } from 'swiper';
@@ -13,7 +13,8 @@ import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
 import '../App.css';
 
-import {Header, FeatureSection} from "../components/Header"; // Import Header Component
+import {Header, FeatureSection} from "../components/Header";
+import ReactMarkdown from "react-markdown"; // Import Header Component
 
 
 const TheApartment: React.FC = () => {
@@ -50,7 +51,7 @@ const TheApartment: React.FC = () => {
         backgroundImage={`${PUBLIC_URL}images/antorno_lago.jpg`}
       />
 
-      <main className="apartment-main p-3">
+      <main className="apartment-main p-4">
         {!showFullGallery && !showSwiper ? (
             <div className="max-w-5xl mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
               {/* Responsive Grid: 2 columns on mobile, 3 on small screens and up */}
@@ -206,30 +207,38 @@ const TheApartment: React.FC = () => {
 
         <section className="apartment-description mt-8">
           <div className="container">
-            <p className="text-lg leading-relaxed">{t('apartment.description')}</p>
+            <p className="feature-section text-lg leading-relaxed">
+              <ReactMarkdown>{t('apartment.description')}</ReactMarkdown>
+            </p>
           </div>
         </section>
 
         {/* FEATURES SECTION ADDED HERE */}
-        <section className="apartment-features">
+        <section className="apartment-features mt-10">
+          <div className="container mx-auto px-4">
             {/*
       grid-cols-1: single column on mobile
       md:grid-cols-2: two columns at md (~768px) and above
       gap-8: margin between columns (and rows if wrapped)
     */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <FeatureSection
-                  image={`${PUBLIC_URL}images/antorno_lago.jpg`}
+                  image={`${PUBLIC_URL}images/apartment/1.jpeg`}
                   title={t('apartment.features.0.title')}
                   items={t('apartment.features.0.items', { returnObjects: true }) as string[]}
               />
-
               <FeatureSection
-                  image={`${PUBLIC_URL}images/apartment/20.jpeg`}
+                  image={`${PUBLIC_URL}images/auronzo_centro.jpg`}
                   title={t('apartment.features.1.title')}
                   items={t('apartment.features.1.items', { returnObjects: true }) as string[]}
               />
+              <FeatureSection
+                  image={`${PUBLIC_URL}images/cortina-perla-dolomiti/4.jpg`}
+                  title={t('apartment.features.2.title')}
+                  items={t('apartment.features.2.items', { returnObjects: true }) as string[]}
+              />
             </div>
+          </div>
         </section>
       </main>
     </>
